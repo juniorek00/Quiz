@@ -328,29 +328,94 @@ export const SEGMENT4_CATEGORIES: Segment4Category[] = [
   },
   {
     id: "s4_c2",
-    name: "Kontynenty",
-    maxValue: 7,
-    errorThreshold: 0,
+    name: "Polskie Parki narodowe",
+    maxValue: 23,
+    errorThreshold: 3,
     validValues: [
-      "Afryka", "Ameryka Południowa", "Ameryka Północna", "Antarktyda", "Australia", "Azja", "Europa"
+       "Woliński Park Narodowy"
+      , "Wigierski Park Narodowy"
+      , "Wielkopolski Park Narodowy"
+      , "Park Narodowy - Ujście Warty"
+      , "Tatrzański Park Narodowy"
+      , "Świętokrzyski Park Narodowy"
+      , "Słowiński Park Narodowy"
+      , "Roztoczański Park Narodowy"
+      , "Poleski Park Narodowy"
+      , "Pieniński Park Narodowy"
+      , "Ojcowski Park Narodowy"
+      , "Narwiański Park Narodowy"
+      , "Magurski Park Narodowy"
+      , "Karkonoski Park Narodowy"
+      , "Kampinoski Park Narodowy"
+      , "Park Narodowy Gór Stołowych"
+      , "Gorczański Park Narodowy"
+      , "Drawieński Park Narodowy"
+      , "Park Narodowy Bory Tucholskie"
+      , "Bieszczadzki Park Narodowy"
+      , "Biebrzański Park Narodowy"
+      , "Białowieski Park Narodowy"
+      , "Babiogórski Park Narodowy"
     ]
   },
   {
     id: "s4_c3",
-    name: "Sąsiedzi Polski",
-    maxValue: 7,
-    errorThreshold: 0,
+    name: "Filmy w reżyserii Quentina Tarantino",
+    maxValue: 14,
+    errorThreshold: 3,
     validValues: [
-      "Niemcy", "Czechy", "Słowacja", "Ukraina", "Białoruś", "Litwa", "Rosja"
+       "Pewnego razu w Hollywood"
+      , "Nienawistna ósemka"
+      , "Django"
+      , "Bękarty wojny"
+      , "Grindhouse Death Proof"
+      , "Sin City Miasto grzechu"
+      , "Kill Bill 2"
+      , "Kill Bill"
+      , "Jackie Brown"
+      , "Cztery pokoje"
+      , "Pulp Fiction"
+      , "Wściekłe psy"
+      , "Urodziny mojego najlepszego przyjaciela"
+      , "Love Birds in Bondage"
     ]
   },
   {
     id: "s4_c4",
-    name: "Dni tygodnia",
-    maxValue: 7,
-    errorThreshold: 0,
+    name: "Pełnometrażowe filmy w których wystąpił Leonardo Di Caprio",
+    maxValue: 31,
+    errorThreshold: 3,
     validValues: [
-      "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"
+      , "Critters 3"
+      , "Trujący bluszcz"
+      , "Chłopięcy świat"
+      , "Co gryzie Gilberta Grape’a?"
+      , "Szybcy i martwi"
+      , "Pamiętnik odmieńca"
+      , "Całkowite zaćmienie"
+      , "Romeo i Julia"
+      , "Pokój Marvina"
+      , "Titanic"
+      , "Człowiek w żelaznej masce"
+      , "Celebrity"
+      , "Niebiańska plaża"
+      , "Gangi Nowego Jorku"
+      , "Złap mnie, jeśli potrafisz"
+      , "Aviator"
+      , "Infiltracja"
+      , "Krwawy diament"
+      , "W sieci kłamstw"
+      , "Droga do szczęścia"
+      , "Wyspa tajemnic"
+      , "Incepcja"
+      , "J. Edgar"
+      , "Django"
+      , "Wielki Gatsby"
+      , "Wilk z Wall Street"
+      , "Zjawa"
+      , "Pewnego razu… w Hollywood"
+      , "Nie patrz w górę"
+      , "Czas krwawego księżyca"
+      , "Jedna bitwa po drugiej"
     ]
   }
 ];
