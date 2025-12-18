@@ -222,20 +222,20 @@ export const SetupPanel: React.FC<SetupPanelProps> = ({ onStartGame, questionsPo
 
           {/* Lista graczy */}
           {players.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 max-h-40 overflow-y-auto pr-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4">
               {players.map((p) => (
-                <div key={p.id} className="flex items-center justify-between bg-white/5 p-2 rounded border border-white/5">
+                <div key={p.id} className={`flex items-center justify-between p-3 rounded border-2 transition-all ${p.gender === 'M' ? 'bg-blue-500/20 border-blue-400 text-blue-100' : 'bg-red-500/20 border-red-400 text-red-100'}`}>
                   <div className="flex items-center gap-2 overflow-hidden">
                     {p.avatar ? (
-                      <img src={p.avatar} alt={p.name} className="w-8 h-8 rounded-full object-cover border border-white/10" onError={(e) => (e.target as HTMLImageElement).src = 'https://placehold.co/40x40/black/white?text=?'} />
+                      <img src={p.avatar} alt={p.name} className="w-12 h-12 rounded-full object-cover border-2 border-white/20 flex-shrink-0" onError={(e) => (e.target as HTMLImageElement).src = 'https://placehold.co/40x40/black/white?text=?'} />
                     ) : (
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ${p.gender === 'M' ? 'bg-blue-600' : 'bg-pink-600'}`}>
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${p.gender === 'M' ? 'bg-blue-600' : 'bg-red-600'}`}>
                         {p.name.charAt(0).toUpperCase()}
                       </div>
                     )}
-                    <span className="truncate text-sm">{p.name}</span>
+                    <span className="truncate text-sm font-medium">{p.name}</span>
                   </div>
-                  <button onClick={() => removePlayer(p.id)} className="text-red-400 hover:text-red-300">
+                  <button onClick={() => removePlayer(p.id)} className={`${p.gender === 'M' ? 'text-blue-300 hover:text-blue-200' : 'text-red-300 hover:text-red-200'}`}>
                     <Trash2 className="w-4 h-4" />
                   </button>
                 </div>
@@ -285,9 +285,9 @@ export const SetupPanel: React.FC<SetupPanelProps> = ({ onStartGame, questionsPo
                       {team.members.map(m => (
                         <li key={m.id} className="flex items-center gap-2">
                            {m.avatar ? (
-                             <img src={m.avatar} alt="av" className="w-5 h-5 rounded-full object-cover" />
+                             <img src={m.avatar} alt="av" className="w-8 h-8 rounded-full object-cover flex-shrink-0" />
                            ) : (
-                             <span className={m.gender === 'M' ? 'text-blue-300' : 'text-pink-300'}>•</span>
+                             <span className={m.gender === 'M' ? 'text-blue-300' : 'text-red-300'}>•</span>
                            )}
                            {m.name}
                         </li>
@@ -308,7 +308,7 @@ export const SetupPanel: React.FC<SetupPanelProps> = ({ onStartGame, questionsPo
               onChange={(e) => setRounds(parseInt(e.target.value))}
               className="bg-dark border border-white/20 rounded px-4 py-2"
             >
-              {[1, 2, 3, 4, 5].map(num => (
+              {Array.from({length: 20}, (_, i) => i + 1).map(num => (
                 <option key={num} value={num}>{num}</option>
               ))}
             </select>

@@ -186,103 +186,103 @@ export const MUSIC_PAIRS: MusicPair[] = [
     id: "track20",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track20.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track20_odp.mp3`,
-    title: "Kizo - Kizownik"
+    title: "Kizo - KIEROWNIK"
   },
   {
     id: "track21",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track21.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track21_odp.mp3`,
-    title: "xxxxx"
+    title: "Alberto - La Manga feat. Josef Bratan Prod. VEYSIGZ"
   },
   {
     id: "track22",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track22.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track22_odp.mp3`,
-    title: "xxxxx"
+    title: "Coldplay - Fix You"
   },
   {
     id: "track23",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track23.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track23_odp.mp3`,
-    title: "xxxxx"
+    title: "Myslovitz - Długość dźwięku samotności"
   },
   {
     id: "track24",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track24.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track24_odp.mp3`,
-    title: "xxxxx"
+    title: "Cleo - Zabiorę nas"
   },
   {
     id: "track25",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track25.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track25_odp.mp3`,
-    title: "xxxxx"
+    title: "Dawid Podsiadło i Kaśka Sochacka - samoloty"
   },
   {
     id: "track26",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track26.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track26_odp.mp3`,
-    title: "xxxxx"
+    title: "Lady Pank - Na co komu dziś"
   },
   {
     id: "track27",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track27.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track27_odp.mp3`,
-    title: "xxxxx"
+    title: "Video - Sroda Czwartek"
   },
   {
     id: "track28",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track28.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track28_odp.mp3`,
-    title: "xxxxx"
+    title: "Lady Pank - Mniej niż zero"
   },
   {
     id: "track29",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track29.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track29_odp.mp3`,
-    title: "xxxxx"
+    title: "Yugopolis & Maciej Maleńczuk - Ostatnia nocka"
   },
   {
     id: "track30",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track30.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track30_odp.mp3`,
-    title: "xxxxx"
+    title: "Gawryle - Harnaś Ice Tea"
   },
   {
     id: "track31",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track31.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track31_odp.mp3`,
-    title: "xxxxx"
+    title: "Dua Lipa - Physical"
   },
   {
     id: "track32",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track32.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track32_odp.mp3`,
-    title: "xxxxx"
+    title: "A$AP Rocky - Sundress"
   },
   {
     id: "track33",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track33.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track33_odp.mp3`,
-    title: "xxxxx"
+    title: "Taylor Swift - The Fate of Ophelia"
   },
   {
     id: "track34",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track34.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track34_odp.mp3`,
-    title: "xxxxx"
+    title: "Gedz - Kosmita"
   },
   {
     id: "track35",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track35.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track35_odp.mp3`,
-    title: "xxxxx"
+    title: "Post Malone, Swae Lee - Sunflower"
   },
   {
     id: "track36",
     questionSrc: `${SEGMENT3_AUDIO_PATH}track36.mp3`,
     answerSrc:   `${SEGMENT3_AUDIO_PATH}track36_odp.mp3`,
-    title: "xxxxx"
+    title: "Drake - In My Feelings"
   },
 ];
 // Aby dodać więcej par, stwórz pliki: track02.mp3, track02_odp.mp3, track03.mp3, track03_odp.mp3 itd.
