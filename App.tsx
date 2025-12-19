@@ -12,6 +12,7 @@ import { Segment4GamePanel } from './components/Segment4GamePanel';
 import { AppState, GameConfig, GameMode, Player, Team, Question, LifelineType } from './types';
 import { loadQuestionsFromCsv } from './utils';
 import { FastForward } from 'lucide-react';
+import RulesPanel from './components/RulesPanel';
 
 function App() {
   const [appState, setAppState] = useState<AppState>('SETUP');
@@ -39,6 +40,13 @@ function App() {
   // Config for Segments
   const [segment2Rounds, setSegment2Rounds] = useState<number>(3);
   const [segment3Rounds, setSegment3Rounds] = useState<number>(3);
+  const [pendingStart, setPendingStart] = useState<{
+    mode: GameMode;
+    players: Player[];
+    teams: Team[];
+    rounds: number;
+    categories: string[];
+  } | null>(null);
 
   // 1. Load CSV on Mount
   useEffect(() => {
@@ -274,8 +282,26 @@ function App() {
           <>
             {appState === 'SETUP' && (
               <SetupPanel 
-                onStartGame={handleStartGame} 
+                onStartGame={handleStartGame}
+                onShowRules={(mode, selPlayers, selTeams, rounds, categories) => {
+                  setPendingStart({ mode, players: selPlayers, teams: selTeams, rounds, categories });
+                  setAppState('RULES');
+                }}
                 questionsPool={questionsPool} 
+              />
+            )}
+
+            {appState === 'RULES' && pendingStart && (
+              <RulesPanel
+                mode={pendingStart.mode}
+                rounds={pendingStart.rounds}
+                categories={pendingStart.categories}
+                onBack={() => { setPendingStart(null); setAppState('SETUP'); }}
+                onConfirm={() => {
+                  // start the game using the pending configuration
+                  handleStartGame(pendingStart.mode, pendingStart.players, pendingStart.teams, pendingStart.rounds, pendingStart.categories);
+                  setPendingStart(null);
+                }}
               />
             )}
 

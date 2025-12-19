@@ -8,10 +8,13 @@ import AvatarModal from './AvatarModal';
 
 interface SetupPanelProps {
   onStartGame: (mode: GameMode, players: Player[], teams: Team[], rounds: number, selectedCategories: string[]) => void;
+  onShowRules: (mode: GameMode, players: Player[], teams: Team[], rounds: number, selectedCategories: string[]) => void;
   questionsPool: Question[];
 }
 
-export const SetupPanel: React.FC<SetupPanelProps> = ({ onStartGame, questionsPool }) => {
+import RulesPanel from './RulesPanel';
+
+export const SetupPanel: React.FC<SetupPanelProps> = ({ onStartGame, onShowRules, questionsPool }) => {
   const [mode, setMode] = useState<GameMode>('INDIVIDUAL');
   const [rounds, setRounds] = useState<number>(3);
   
@@ -408,17 +411,39 @@ export const SetupPanel: React.FC<SetupPanelProps> = ({ onStartGame, questionsPo
 
         {/* Start Button */}
         <button
-          onClick={handleStart}
-          disabled={isDataEmpty}
-          className={`w-full py-4 rounded-xl text-xl font-bold text-white shadow-lg transition-all flex items-center justify-center gap-3 ${
-            isDataEmpty 
-            ? 'bg-gray-700 cursor-not-allowed text-gray-400' 
-            : 'bg-gradient-to-r from-primary to-secondary hover:brightness-110 hover:shadow-primary/25'
-          }`}
-        >
-          {isDataEmpty ? <AlertCircle /> : <Play className="w-6 h-6 fill-current" />} 
-          {isDataEmpty ? "Napraw plik CSV aby rozpocząć" : "Rozpocznij Quiz"}
-        </button>
+          onClick={() => {
+            if (isDataEmpty) return;
+            // validate before navigating to rules page
+            if (players.length === 0) {
+              alert("Dodaj przynajmniej jednego uczestnika.");
+              return;
+            }
+            if (mode === 'TEAM' && teams.length === 0) {
+              alert("Musisz wylosować lub utworzyć drużyny przed startem.");
+              return;
+            }
+            if (mode === 'TEAM' && teams.some(t => !t.name.trim())) {
+              alert("Wszystkie drużyny muszą mieć nazwę.");
+              return;
+            }
+            if (questionsPool.length === 0) {
+              alert("Brak pytań w pliku CSV!");
+              return;
+            }
+
+            // Show rules page in the app
+            onShowRules(mode, players, teams, rounds, availableCategories);
+          }}
+            disabled={isDataEmpty}
+            className={`w-full py-4 rounded-xl text-xl font-bold text-white shadow-lg transition-all flex items-center justify-center gap-3 ${
+              isDataEmpty 
+              ? 'bg-gray-700 cursor-not-allowed text-gray-400' 
+              : 'bg-gradient-to-r from-primary to-secondary hover:brightness-110 hover:shadow-primary/25'
+            }`}
+          >
+            {isDataEmpty ? <AlertCircle /> : <Play className="w-6 h-6 fill-current" />} 
+            {isDataEmpty ? "Napraw plik CSV aby rozpocząć" : "Rozpocznij Quiz"}
+          </button>
       </div>
       <AvatarModal src={selectedAvatar} onClose={() => setSelectedAvatar(null)} />
     </div>

@@ -179,7 +179,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
 
     if (isCorrect) {
       const current = mode === 'INDIVIDUAL' ? currentPlayers[turnIndex] : currentTeams[turnIndex];
-      onUpdateScore(current.id, current.score + 1);
+      onUpdateScore(current.id, current.score + 10);
     }
 
     setTurnState('RESULT');
@@ -479,7 +479,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
                     </div>
                   ) : lastAnswerCorrect ? (
                     <div className="text-green-400 font-bold text-xl flex items-center gap-2">
-                      <Zap className="w-6 h-6 fill-current" /> Poprawna odpowiedź! (+1 pkt)
+                      <Zap className="w-6 h-6 fill-current" /> Poprawna odpowiedź! (+10 pkt)
                     </div>
                   ) : (
                     <div className="text-red-400 font-bold text-xl">
