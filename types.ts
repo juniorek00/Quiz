@@ -19,6 +19,7 @@ export interface Team {
   id: string;
   name: string;
   members: Player[];
+  image?: string; // opcjonalne zdjęcie drużyny (ścieżka)
   score: number;
   lifelinesUsed: LifelineType[];
 }

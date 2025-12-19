@@ -56,6 +56,9 @@ export const SummaryPanel: React.FC<SummaryPanelProps> = ({
 
   const renderAvatar = (entity: any, size: string = "w-10 h-10") => {
     if (mode === 'TEAM') {
+      if (entity.image) {
+        return <img src={entity.image} alt={entity.name} className={`${size} rounded-md object-cover border-2 border-white/20`} />;
+      }
       return <div className={`${size} rounded-lg bg-secondary flex items-center justify-center text-white`}><Users className="w-1/2 h-1/2" /></div>;
     }
     if (entity.avatar) {

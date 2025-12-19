@@ -20,6 +20,15 @@ export const AVATAR_FILES = [
   "avatar16.jpg", "avatar17.jpg", "avatar18.jpg", "avatar19.jpg", "avatar20.jpg"
 ];
 
+// --- ZDJĘCIA DRUŻYN ---
+// Folder z zdjęciami drużyn w public/
+export const TEAM_PHOTOS_PATH = "images/teams/";
+
+// Lista dostępnych plików zdjęć drużyn. Użytkownik powinien umieścić je w public/images/teams/
+export const TEAM_PHOTOS = [
+  "team1.jpg", "team2.jpg", "team3.jpg", "team4.jpg", "team5.jpg", "team6.jpg","team7.jpg","team8.jpg", "team9.jpg", "team10.jpg", "team11.jpg", "team12.jpg","team13.jpg"
+];
+
 // --- KONFIGURACJA SEGMENTU 2 (OBRAZKI) ---
 
 // Folder, z którego aplikacja pobiera zdjęcia.
