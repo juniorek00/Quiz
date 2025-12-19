@@ -58,7 +58,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   const [correctAnswerIndex, setCorrectAnswerIndex] = useState<number | null>(null);
 
   // Timer State
-  const [timeLeft, setTimeLeft] = useState<number>(30);
+  const [timeLeft, setTimeLeft] = useState<number>(60);
 
   // Lifeline Local State for current question
   const [hiddenAnswers, setHiddenAnswers] = useState<number[]>([]);
@@ -137,7 +137,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
     setCorrectAnswerIndex(null);
     setCurrentQuestion(null);
     setSelectedCategory(null);
-    setTimeLeft(30);
+    setTimeLeft(60);
 
     rollTurnCategories();
   };
@@ -158,7 +158,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
     
     setCurrentQuestion(selectedItem.q);
     setSelectedCategory(category);
-    setTimeLeft(30);
+    setTimeLeft(60);
     setTurnState('ANSWERING');
   };
 
@@ -240,7 +240,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
          setUsedSwapIds(prev => [...prev, selectedQuestion!.id]);
          setCurrentQuestion(selectedQuestion);
          setHiddenAnswers([]);
-         setTimeLeft(30);
+         setTimeLeft(60);
       } else {
          alert("Brak pytań zapasowych w kategorii 'Inne'! Niestety koło przepadło.");
       }

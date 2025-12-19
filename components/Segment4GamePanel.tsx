@@ -161,8 +161,9 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
   };
 
   const finishRound = () => {
-    if (currentRoundIndex < SEGMENT4_CATEGORIES.length - 1) {
-      setCurrentRoundIndex(prev => prev + 1);
+    const nextRoundIndex = currentRoundIndex + 1;
+    if (nextRoundIndex < SEGMENT4_CATEGORIES.length) {
+      setCurrentRoundIndex(nextRoundIndex);
       setPhase('PREVIEW');
       setTimeLeft(0);
       setBids({});

@@ -18,7 +18,7 @@ const RulesPanel: React.FC<RulesPanelProps> = ({ mode, rounds, categories, onCon
 
       <ul className="list-disc list-inside space-y-2 text-gray-200 mb-6">
         <li>Każdy uczestnik / drużyna odpowiada po kolei na pytania.</li>
-        <li>Masz <strong>30 sekund</strong> na udzielenie odpowiedzi każdorazowo.</li>
+        <li>Masz <strong>60 sekund</strong> na udzielenie odpowiedzi każdorazowo.</li>
         <li>Poprawna odpowiedź daje <strong>+10 punktów</strong>.</li>
         <li>Do dyspozycji są koła ratunkowe: <strong>50/50</strong>, <strong>Podpowiedź</strong>, <strong>Wymiana</strong>.</li>
         <li>Jeżeli skończą się pytania w aktywnych kategoriach, gra zakończy się automatycznie.</li>

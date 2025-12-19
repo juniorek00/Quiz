@@ -676,7 +676,7 @@ export const SEGMENT4_CATEGORIES: Segment4Category[] = [
     maxValue: 31,
     errorThreshold: 3,
     validValues: [
-      , "Critters 3"
+      "Critters 3"
       , "Trujący bluszcz"
       , "Chłopięcy świat"
       , "Co gryzie Gilberta Grape’a?"
