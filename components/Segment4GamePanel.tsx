@@ -235,6 +235,17 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
               <h2 className="text-3xl font-bold mb-4">Czas na naradę...</h2>
               <div className="text-6xl font-black font-mono text-yellow-500 animate-pulse">{timeLeft}</div>
               <p className="text-gray-400 mt-4">Zastanówcie się, ile haseł jesteście w stanie wymienić.</p>
+              <div className="mt-6">
+                <button
+                  onClick={() => {
+                    setTimeLeft(0);
+                    setPhase('BIDDING');
+                  }}
+                  className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-bold transition-colors"
+                >
+                  Zakończ przed czasem
+                </button>
+              </div>
            </div>
         )}
 
