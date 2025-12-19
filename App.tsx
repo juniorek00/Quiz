@@ -13,12 +13,19 @@ import { AppState, GameConfig, GameMode, Player, Team, Question, LifelineType } 
 import { loadQuestionsFromCsv } from './utils';
 import { FastForward } from 'lucide-react';
 import RulesPanel from './components/RulesPanel';
+import SegmentBreak1 from './components/SegmentBreak1';
+import SegmentBreak2 from './components/SegmentBreak2';
+import SegmentBreak3 from './components/SegmentBreak3';
+import SegmentBreak4 from './components/SegmentBreak4';
 
 function App() {
   const [appState, setAppState] = useState<AppState>('SETUP');
   
   // Stan określający, który segment ma zostać uruchomiony po kliknięciu "Następny Segment" w podsumowaniu
   const [nextStage, setNextStage] = useState<'SEGMENT2' | 'SEGMENT3' | 'SEGMENT4' | 'END_GAME'>('SEGMENT2');
+
+  // Stan określający, który segment właśnie się zakończył (do wyświetlenia odpowiedniego SegmentBreak)
+  const [completedSegment, setCompletedSegment] = useState<1 | 2 | 3 | 4 | null>(null);
 
   // --- Data from CSV ---
   const [questionsPool, setQuestionsPool] = useState<Question[]>([]);
@@ -94,7 +101,8 @@ function App() {
     setTeams(finalTeams);
     // Po zakończeniu Segmentu 1 (GAME), następnym krokiem jest SEGMENT 2
     setNextStage('SEGMENT2');
-    setAppState('SUMMARY');
+    setCompletedSegment(1);
+    setAppState('SEGMENT_BREAK');
   };
 
   const handleUpdateScore = (id: string, newScore: number) => {
@@ -132,6 +140,10 @@ function App() {
     loadQuestionsFromCsv().then(qs => setQuestionsPool(qs)); 
   };
 
+  const handleContinueFromBreak = () => {
+    setAppState('SUMMARY');
+  };
+
   // --- Segment Logic Handlers ---
 
   const goToNextSegment = () => {
@@ -151,7 +163,8 @@ function App() {
   };
   const handleEndSegment2 = () => {
     setNextStage('SEGMENT3');
-    setAppState('SUMMARY');
+    setCompletedSegment(2);
+    setAppState('SEGMENT_BREAK');
   };
 
   // --- Segment 3 ---
@@ -162,7 +175,8 @@ function App() {
   const handleEndSegment3 = () => {
       // Po zakończeniu Segmentu 3 idziemy do Segmentu 4
       setNextStage('SEGMENT4');
-      setAppState('SUMMARY');
+      setCompletedSegment(3);
+      setAppState('SEGMENT_BREAK');
   };
 
   // --- Segment 4 ---
@@ -172,7 +186,8 @@ function App() {
   const handleEndSegment4 = () => {
      // Koniec gry po segmencie 4
      setNextStage('END_GAME');
-     setAppState('SUMMARY');
+     setCompletedSegment(4);
+     setAppState('SEGMENT_BREAK');
   };
 
   // --- Force Skip Logic ---
@@ -303,6 +318,22 @@ function App() {
                   setPendingStart(null);
                 }}
               />
+            )}
+
+            {appState === 'SEGMENT_BREAK' && completedSegment === 1 && (
+              <SegmentBreak1 onContinue={handleContinueFromBreak} />
+            )}
+
+            {appState === 'SEGMENT_BREAK' && completedSegment === 2 && (
+              <SegmentBreak2 onContinue={handleContinueFromBreak} />
+            )}
+
+            {appState === 'SEGMENT_BREAK' && completedSegment === 3 && (
+              <SegmentBreak3 onContinue={handleContinueFromBreak} />
+            )}
+
+            {appState === 'SEGMENT_BREAK' && completedSegment === 4 && (
+              <SegmentBreak4 onContinue={handleContinueFromBreak} />
             )}
 
             {appState === 'GAME' && (

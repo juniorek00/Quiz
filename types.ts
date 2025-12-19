@@ -67,4 +67,4 @@ export interface Segment4Category {
 }
 
 // Dodano stany dla wszystkich segmentów
-export type AppState = 'SETUP' | 'GAME' | 'SUMMARY' | 'SEGMENT2_SETUP' | 'SEGMENT2_GAME' | 'SEGMENT3_SETUP' | 'SEGMENT3_GAME' | 'SEGMENT4_SETUP' | 'SEGMENT4_GAME';
+export type AppState = 'SETUP' | 'RULES' | 'GAME' | 'SUMMARY' | 'SEGMENT_BREAK' | 'SEGMENT2_SETUP' | 'SEGMENT2_GAME' | 'SEGMENT3_SETUP' | 'SEGMENT3_GAME' | 'SEGMENT4_SETUP' | 'SEGMENT4_GAME';
