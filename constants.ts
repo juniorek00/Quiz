@@ -4,7 +4,7 @@
 
 import { MovieFramePair, MusicPair, Segment4Category } from "./types";
 
-export const APP_NAME = "Quiz Master Pro";
+export const APP_NAME = "QuizSquadowy Pro";
 export const CSV_FILE_PATH = "pytania.csv";
 
 // --- KONFIGURACJA AWATARÓW ---

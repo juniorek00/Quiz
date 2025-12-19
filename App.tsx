@@ -198,18 +198,21 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-[#0f172a] to-black text-white">
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-900 via-[#07221a] to-black text-white">
       
       {/* Header */}
       <header className="border-b border-white/10 bg-black/20 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
            <div 
-             className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity" 
+             className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
              onClick={handleRestart}
              title="Wróć do strony głównej"
            >
-             <div className="w-8 h-8 bg-gradient-to-tr from-primary to-secondary rounded-lg rotate-3" />
-             <span className="font-bold text-xl tracking-tight">Quiz<span className="text-primary">Master</span></span>
+             <div className="w-8 h-8 bg-gradient-to-tr from-primary to-secondary rounded-lg rotate-3 relative">
+               <span className="absolute -top-2 -right-2 text-sm">🎄</span>
+             </div>
+             <span className="font-bold text-xl tracking-tight">Quiz<span className="text-primary">Squadowy</span></span>
+             <span className="ml-2 text-sm opacity-80">❄️</span>
            </div>
            
            <div className="flex items-center gap-4">
