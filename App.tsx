@@ -102,7 +102,7 @@ function App() {
     // Po zakończeniu Segmentu 1 (GAME), następnym krokiem jest SEGMENT 2
     setNextStage('SEGMENT2');
     setCompletedSegment(1);
-    setAppState('SEGMENT_BREAK');
+    setAppState('SUMMARY');
   };
 
   const handleUpdateScore = (id: string, newScore: number) => {
@@ -141,7 +141,8 @@ function App() {
   };
 
   const handleContinueFromBreak = () => {
-    setAppState('SUMMARY');
+    // After user continues from the break, go to the next segment setup
+    goToNextSegment();
   };
 
   // --- Segment Logic Handlers ---
@@ -164,7 +165,7 @@ function App() {
   const handleEndSegment2 = () => {
     setNextStage('SEGMENT3');
     setCompletedSegment(2);
-    setAppState('SEGMENT_BREAK');
+    setAppState('SUMMARY');
   };
 
   // --- Segment 3 ---
@@ -172,23 +173,23 @@ function App() {
      setSegment3Rounds(rounds);
      setAppState('SEGMENT3_GAME');
   };
-  const handleEndSegment3 = () => {
+    const handleEndSegment3 = () => {
       // Po zakończeniu Segmentu 3 idziemy do Segmentu 4
       setNextStage('SEGMENT4');
       setCompletedSegment(3);
-      setAppState('SEGMENT_BREAK');
-  };
+      setAppState('SUMMARY');
+    };
 
   // --- Segment 4 ---
   const handleStartSegment4 = () => {
      setAppState('SEGMENT4_GAME');
   };
-  const handleEndSegment4 = () => {
-     // Koniec gry po segmencie 4
-     setNextStage('END_GAME');
-     setCompletedSegment(4);
-     setAppState('SEGMENT_BREAK');
-  };
+    const handleEndSegment4 = () => {
+      // Koniec gry po segmencie 4
+      setNextStage('END_GAME');
+      setCompletedSegment(4);
+      setAppState('SUMMARY');
+    };
 
   // --- Force Skip Logic ---
   const handleForceNextSegment = () => {
@@ -358,7 +359,7 @@ function App() {
                 teams={teams}
                 onRestart={handleRestart}
                 onUpdateScore={handleUpdateScore}
-                onNextSegment={goToNextSegment}
+                onNextSegment={() => setAppState('SEGMENT_BREAK')}
                 isFinalStage={nextStage === 'END_GAME'}
                 nextSegmentLabel={
                     nextStage === 'SEGMENT2' ? "Następny Segment: Kadry Filmowe" : 

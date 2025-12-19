@@ -19,11 +19,11 @@ interface GamePanelProps {
 
 type TurnState = 'CATEGORY_SELECT' | 'ANSWERING' | 'RESULT';
 
-export const GamePanel: React.FC<GamePanelProps> = ({ 
-  mode, 
-  players: initialPlayers, 
-  teams: initialTeams, 
-  config, 
+export const GamePanel: React.FC<GamePanelProps> = ({
+  mode,
+  players: initialPlayers,
+  teams: initialTeams,
+  config,
   onEndGame,
   onRoundChange,
   onUpdateScore,
@@ -34,7 +34,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   // --- Game State ---
   const [currentPlayers, setCurrentPlayers] = useState<Player[]>(initialPlayers);
   const [currentTeams, setCurrentTeams] = useState<Team[]>(initialTeams);
-  
+
   // Sync props with state
   useEffect(() => { setCurrentPlayers(initialPlayers); }, [initialPlayers]);
   useEffect(() => { setCurrentTeams(initialTeams); }, [initialTeams]);
@@ -44,10 +44,10 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   });
 
   const [usedSwapIds, setUsedSwapIds] = useState<string[]>([]);
-  
+
   const [turnIndex, setTurnIndex] = useState(0);
   const [turnState, setTurnState] = useState<TurnState>('CATEGORY_SELECT');
-  
+
   const [turnCategories, setTurnCategories] = useState<string[]>([]);
 
   // Current Question Logic
@@ -63,7 +63,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   // Lifeline Local State for current question
   const [hiddenAnswers, setHiddenAnswers] = useState<number[]>([]);
   const [showHint, setShowHint] = useState<boolean>(false);
-  
+
   const [editingScore, setEditingScore] = useState<{ id: string, name: string, score: number } | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -71,7 +71,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   const getCurrentEntity = () => {
     return mode === 'INDIVIDUAL' ? currentPlayers[turnIndex] : currentTeams[turnIndex];
   };
-  
+
   const currentEntity = getCurrentEntity();
 
   // --- Logic for Category Randomization ---
@@ -129,7 +129,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
 
     setTurnIndex(nextIndex);
     setTurnState('CATEGORY_SELECT');
-    
+
     setHiddenAnswers([]);
     setShowHint(false);
     setLastAnswerCorrect(null);
@@ -144,8 +144,8 @@ export const GamePanel: React.FC<GamePanelProps> = ({
 
   const handleCategorySelect = (category: string) => {
     const questionIndices = availableQuestions
-        .map((q, index) => ({ q, index }))
-        .filter(item => item.q.category === category);
+      .map((q, index) => ({ q, index }))
+      .filter(item => item.q.category === category);
 
     if (questionIndices.length === 0) return;
 
@@ -155,7 +155,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
     const newPool = [...availableQuestions];
     newPool.splice(selectedItem.index, 1);
     setAvailableQuestions(newPool);
-    
+
     setCurrentQuestion(selectedItem.q);
     setSelectedCategory(category);
     setTimeLeft(60);
@@ -186,10 +186,10 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   };
 
   const openScoreEditor = (id: string) => {
-    const entity = mode === 'INDIVIDUAL' 
-      ? currentPlayers.find(p => p.id === id) 
+    const entity = mode === 'INDIVIDUAL'
+      ? currentPlayers.find(p => p.id === id)
       : currentTeams.find(t => t.id === id);
-      
+
     if (entity) {
       setEditingScore({ id: entity.id, name: entity.name, score: entity.score });
     }
@@ -203,7 +203,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
 
   const useLifeline = (type: LifelineType) => {
     const current = mode === 'INDIVIDUAL' ? currentPlayers[turnIndex] : currentTeams[turnIndex];
-    
+
     // Zaktualizuj stan w komponencie nadrzędnym (App.tsx), aby zmiana była trwała
     onUseLifeline(current.id, type);
 
@@ -232,17 +232,17 @@ export const GamePanel: React.FC<GamePanelProps> = ({
 
       let selectedQuestion: Question | undefined;
       if (availableSwapQuestions.length > 0) {
-         const randomIndex = Math.floor(Math.random() * availableSwapQuestions.length);
-         selectedQuestion = availableSwapQuestions[randomIndex];
+        const randomIndex = Math.floor(Math.random() * availableSwapQuestions.length);
+        selectedQuestion = availableSwapQuestions[randomIndex];
       }
 
       if (selectedQuestion) {
-         setUsedSwapIds(prev => [...prev, selectedQuestion!.id]);
-         setCurrentQuestion(selectedQuestion);
-         setHiddenAnswers([]);
-         setTimeLeft(60);
+        setUsedSwapIds(prev => [...prev, selectedQuestion!.id]);
+        setCurrentQuestion(selectedQuestion);
+        setHiddenAnswers([]);
+        setTimeLeft(60);
       } else {
-         alert("Brak pytań zapasowych w kategorii 'Inne'! Niestety koło przepadło.");
+        alert("Brak pytań zapasowych w kategorii 'Inne'! Niestety koło przepadło.");
       }
     }
   };
@@ -263,9 +263,9 @@ export const GamePanel: React.FC<GamePanelProps> = ({
     if (mode === 'TEAM') {
       if (entity.image) {
         return (
-          <img 
-            src={entity.image} 
-            alt={entity.name} 
+          <img
+            src={entity.image}
+            alt={entity.name}
             className={`${size} rounded-lg object-cover border border-white/20 ${clickable ? 'cursor-pointer hover:border-yellow-500/50' : ''}`}
             onClick={(e) => {
               if (clickable) {
@@ -289,7 +289,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   };
 
   const renderLeaderboard = () => {
-    const list = mode === 'INDIVIDUAL' 
+    const list = mode === 'INDIVIDUAL'
       ? [...currentPlayers].sort((a, b) => b.score - a.score)
       : [...currentTeams].sort((a, b) => b.score - a.score);
 
@@ -300,25 +300,24 @@ export const GamePanel: React.FC<GamePanelProps> = ({
         </h3>
         <ul className="space-y-2">
           {list.map((entity: any, idx) => (
-            <li key={entity.id} className={`flex justify-between items-center p-2 rounded ${
-              (mode === 'INDIVIDUAL' && currentPlayers[turnIndex].id === entity.id) ||
-              (mode === 'TEAM' && currentTeams[turnIndex].id === entity.id)
+            <li key={entity.id} className={`flex justify-between items-center p-2 rounded ${(mode === 'INDIVIDUAL' && currentPlayers[turnIndex].id === entity.id) ||
+                (mode === 'TEAM' && currentTeams[turnIndex].id === entity.id)
                 ? 'bg-primary/20 border border-primary/50'
                 : 'bg-white/5'
-            }`}>
+              }`}>
               <div className="flex items-center gap-3">
                 <span className="font-mono text-gray-400 text-sm w-4">#{idx + 1}</span>
                 {renderAvatar(entity, "w-8 h-8", mode === 'TEAM')}
                 <span className="truncate max-w-[100px] text-sm">{entity.name}</span>
               </div>
               <div className="flex items-center gap-2">
-                 <span className="font-bold text-secondary text-sm">{entity.score}</span>
-                 <button 
+                <span className="font-bold text-secondary text-sm">{entity.score}</span>
+                <button
                   onClick={() => openScoreEditor(entity.id)}
                   className="text-gray-500 hover:text-white transition-colors p-1"
-                 >
-                   <Edit2 className="w-3 h-3" />
-                 </button>
+                >
+                  <Edit2 className="w-3 h-3" />
+                </button>
               </div>
             </li>
           ))}
@@ -328,23 +327,23 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   };
 
   // Find the entity currently being edited to show their lifelines
-  const editingEntity = editingScore 
+  const editingEntity = editingScore
     ? (mode === 'INDIVIDUAL' ? currentPlayers.find(p => p.id === editingScore.id) : currentTeams.find(t => t.id === editingScore.id))
     : null;
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 p-4 max-w-6xl mx-auto">
-      
+
       {/* Main Game Area */}
       <div className="lg:col-span-3 space-y-6">
-        
+
         {/* Top Bar: Whose Turn */}
         <div className="bg-gradient-to-r from-slate-800 to-slate-900 p-6 rounded-2xl shadow-xl border border-white/10 text-center relative overflow-hidden flex flex-col items-center justify-center">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary" />
           <h2 className="text-gray-400 uppercase tracking-widest text-xs mb-3">Aktualna Tura</h2>
           <div className="flex items-center gap-4">
-             {renderAvatar(currentEntity, "w-16 h-16", mode === 'TEAM')}
-             <h1 className="text-4xl font-black text-white">{currentEntity.name}</h1>
+            {renderAvatar(currentEntity, "w-16 h-16", mode === 'TEAM')}
+            <h1 className="text-4xl font-black text-white">{currentEntity.name}</h1>
           </div>
         </div>
 
@@ -352,12 +351,12 @@ export const GamePanel: React.FC<GamePanelProps> = ({
         {turnState === 'CATEGORY_SELECT' && (
           <div className="bg-surface p-8 rounded-2xl border border-white/10 text-center animate-fade-in">
             <h3 className="text-2xl font-bold mb-6 flex items-center justify-center gap-2">
-               <Shuffle className="w-6 h-6 text-primary" />
-               Wylosowane kategorie
+              <Shuffle className="w-6 h-6 text-primary" />
+              Wylosowane kategorie
             </h3>
-            
+
             {turnCategories.length === 0 ? (
-               <div className="text-red-400">Brak wystarczającej liczby kategorii. Koniec gry...</div>
+              <div className="text-red-400">Brak wystarczającej liczby kategorii. Koniec gry...</div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {turnCategories.map(cat => (
@@ -368,7 +367,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
                   >
                     <span className="text-xl font-bold group-hover:text-primary transition-colors">{cat}</span>
                     <div className="text-sm text-gray-500 mt-2">
-                       Dostępne pytania: {availableQuestions.filter(q => q.category === cat).length}
+                      Dostępne pytania: {availableQuestions.filter(q => q.category === cat).length}
                     </div>
                   </button>
                 ))}
@@ -381,54 +380,53 @@ export const GamePanel: React.FC<GamePanelProps> = ({
         {/* --- PHASE 2 & 3: Question & Result --- */}
         {(turnState === 'ANSWERING' || turnState === 'RESULT') && currentQuestion && (
           <div className="bg-surface p-6 sm:p-8 rounded-2xl border border-white/10 shadow-2xl relative">
-            
+
             <div className="flex flex-col-reverse sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
               <div className="flex gap-3">
-                 {turnState === 'ANSWERING' && (
-                    <>
-                      <LifelineButton 
-                        icon={<div className="font-bold text-xs">50:50</div>} 
-                        label="50/50" 
-                        available={isLifelineAvailable('FIFTY_FIFTY')} 
-                        onClick={() => useLifeline('FIFTY_FIFTY')} 
-                      />
-                      <LifelineButton 
-                        icon={<HelpCircle className="w-4 h-4" />} 
-                        label="Podpowiedź" 
-                        available={isLifelineAvailable('HINT')} 
-                        onClick={() => useLifeline('HINT')} 
-                      />
-                      <LifelineButton 
-                        icon={<RefreshCw className="w-4 h-4" />} 
-                        label="Wymiana" 
-                        available={isLifelineAvailable('SWAP')} 
-                        onClick={() => useLifeline('SWAP')} 
-                      />
-                    </>
-                 )}
+                {turnState === 'ANSWERING' && (
+                  <>
+                    <LifelineButton
+                      icon={<div className="font-bold text-xs">50:50</div>}
+                      label="50/50"
+                      available={isLifelineAvailable('FIFTY_FIFTY')}
+                      onClick={() => useLifeline('FIFTY_FIFTY')}
+                    />
+                    <LifelineButton
+                      icon={<HelpCircle className="w-4 h-4" />}
+                      label="Podpowiedź"
+                      available={isLifelineAvailable('HINT')}
+                      onClick={() => useLifeline('HINT')}
+                    />
+                    <LifelineButton
+                      icon={<RefreshCw className="w-4 h-4" />}
+                      label="Wymiana"
+                      available={isLifelineAvailable('SWAP')}
+                      onClick={() => useLifeline('SWAP')}
+                    />
+                  </>
+                )}
               </div>
 
-              <div className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-colors ${
-                  timeLeft <= 10 && turnState === 'ANSWERING'
-                  ? 'bg-red-500/20 border-red-500 text-red-400 animate-pulse' 
+              <div className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-colors ${timeLeft <= 10 && turnState === 'ANSWERING'
+                  ? 'bg-red-500/20 border-red-500 text-red-400 animate-pulse'
                   : 'bg-black/30 border-white/10 text-white'
-              }`}>
-                  <Clock className="w-5 h-5" />
-                  <span className="font-mono text-2xl font-bold w-8 text-center">{timeLeft}</span>
+                }`}>
+                <Clock className="w-5 h-5" />
+                <span className="font-mono text-2xl font-bold w-8 text-center">{timeLeft}</span>
               </div>
             </div>
 
             {showHint && (
-               <div className="mb-6 p-4 bg-yellow-500/20 border border-yellow-500/50 rounded-lg text-center animate-fade-in">
-                  <h4 className="text-yellow-400 text-lg font-bold flex items-center justify-center gap-2">
-                     <HelpCircle className="w-6 h-6" />
-                     PODPOWIEDŹ AKTYWNA
-                  </h4>
-                  {/* <p className="text-white font-medium mt-2 text-lg">
+              <div className="mb-6 p-4 bg-yellow-500/20 border border-yellow-500/50 rounded-lg text-center animate-fade-in">
+                <h4 className="text-yellow-400 text-lg font-bold flex items-center justify-center gap-2">
+                  <HelpCircle className="w-6 h-6" />
+                  PODPOWIEDŹ AKTYWNA
+                </h4>
+                {/* <p className="text-white font-medium mt-2 text-lg">
                     {currentQuestion.hint || "Brak zdefiniowanej podpowiedzi w bazie pytań."}
                   </p> */}
-                  <p className="text-yellow-200/60 text-xs mt-2">+20 sekund do czasu gry.</p>
-               </div>
+                <p className="text-yellow-200/60 text-xs mt-2">+20 sekund do czasu gry.</p>
+              </div>
             )}
 
             <div className="mb-8">
@@ -445,7 +443,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
                 const isHidden = hiddenAnswers.includes(idx);
                 const isCorrect = idx === currentQuestion.correctIndex;
                 let btnClass = "bg-white/5 hover:bg-white/10 border-white/10";
-                
+
                 if (turnState === 'RESULT') {
                   if (isCorrect) btnClass = "bg-green-500/20 border-green-500 text-green-300";
                   else if (correctAnswerIndex === idx) btnClass = "bg-green-500/20 border-green-500 text-green-300";
@@ -475,7 +473,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
                 <div className="text-center sm:text-left">
                   {timeRanOut ? (
                     <div className="text-red-400 font-bold text-xl flex items-center gap-2">
-                       <Clock className="w-6 h-6" /> Czas minął!
+                      <Clock className="w-6 h-6" /> Czas minął!
                     </div>
                   ) : lastAnswerCorrect ? (
                     <div className="text-green-400 font-bold text-xl flex items-center gap-2">
@@ -499,18 +497,18 @@ export const GamePanel: React.FC<GamePanelProps> = ({
         )}
 
         <div className="text-center">
-            <button 
-                onClick={() => onEndGame(currentPlayers, currentTeams)} 
-                className="text-red-400 hover:text-red-300 text-sm underline mt-4"
-            >
-                Zakończ quiz przed czasem
-            </button>
+          <button
+            onClick={() => onEndGame(currentPlayers, currentTeams)}
+            className="text-red-400 hover:text-red-300 text-sm underline mt-4"
+          >
+            Zakończ quiz przed czasem
+          </button>
         </div>
 
       </div>
 
       <div className="lg:col-span-1">
-         {renderLeaderboard()}
+        {renderLeaderboard()}
       </div>
 
       <AvatarModal src={selectedImage} onClose={() => setSelectedImage(null)} />
@@ -522,14 +520,14 @@ export const GamePanel: React.FC<GamePanelProps> = ({
               <h3 className="text-xl font-bold flex items-center gap-2">
                 <Edit2 className="w-5 h-5 text-primary" /> Edycja punktów
               </h3>
-              <button 
-                onClick={() => setEditingScore(null)} 
+              <button
+                onClick={() => setEditingScore(null)}
                 className="text-gray-400 hover:text-white"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
-            
+
             <div className="mb-4">
               <p className="text-sm text-gray-400 mb-1">Uczestnik/Drużyna:</p>
               <p className="font-bold text-lg text-white">{editingScore.name}</p>
@@ -558,7 +556,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
                     ))
                   )}
                 </div>
-                <button 
+                <button
                   onClick={() => {
                     onResetLifelines(editingScore.id);
                     setEditingScore(null);
@@ -592,11 +590,10 @@ const LifelineButton: React.FC<{
     onClick={onClick}
     disabled={!available}
     title={label}
-    className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all ${
-      available
+    className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all ${available
         ? 'bg-blue-600 border-blue-400 text-white hover:bg-blue-500 shadow-lg shadow-blue-500/20'
         : 'bg-gray-800 border-gray-700 text-gray-600 cursor-not-allowed'
-    }`}
+      }`}
   >
     {icon}
   </button>
