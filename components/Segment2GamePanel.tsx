@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { GameMode, Player, Team, MovieFramePair } from '../types';
 import { MOVIE_FRAMES } from '../constants';
 import { Trophy, ArrowRight, XCircle, Film, Edit2, Save, X, Users, LifeBuoy } from 'lucide-react';
+import AvatarModal from './AvatarModal';
 
 interface Segment2GamePanelProps {
   mode: GameMode;
@@ -28,7 +29,9 @@ export const Segment2GamePanel: React.FC<Segment2GamePanelProps> = ({
   const [usedFrameIds, setUsedFrameIds] = useState<string[]>([]);
   const [isAnswered, setIsAnswered] = useState(false);
   const [winningEntityName, setWinningEntityName] = useState<string | null>(null);
+  const [winningEntityId, setWinningEntityId] = useState<string | null>(null);
   const [editingScore, setEditingScore] = useState<{ id: string, name: string, score: number } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const loadNextFrame = () => {
     const availableFrames = MOVIE_FRAMES.filter(f => !usedFrameIds.includes(f.id));
@@ -62,11 +65,13 @@ export const Segment2GamePanel: React.FC<Segment2GamePanelProps> = ({
     onUpdateScore(entityId, currentScore + 10);
     setIsAnswered(true);
     setWinningEntityName(entityName);
+    setWinningEntityId(entityId);
   };
 
   const handleNoWinner = () => {
     setIsAnswered(true);
     setWinningEntityName(null);
+    setWinningEntityId(null);
   };
 
   const handleNextRound = () => {
@@ -92,7 +97,19 @@ export const Segment2GamePanel: React.FC<Segment2GamePanelProps> = ({
   };
 
   const renderAvatar = (entity: any, size: string = "w-8 h-8") => {
-    if (mode === 'TEAM') return <div className={`${size} rounded-lg bg-secondary flex items-center justify-center text-white`}><Users className="w-1/2 h-1/2" /></div>;
+    if (mode === 'TEAM') {
+      if (entity.image) {
+        return (
+          <img
+            src={entity.image}
+            alt={entity.name}
+            className={`${size} rounded-md object-cover border border-white/20 cursor-pointer`}
+            onClick={() => setSelectedImage(entity.image)}
+          />
+        );
+      }
+      return <div className={`${size} rounded-lg bg-secondary flex items-center justify-center text-white`}><Users className="w-1/2 h-1/2" /></div>;
+    }
     if (entity.avatar) return <img src={entity.avatar} alt={entity.name} className={`${size} rounded-full object-cover border border-white/20`} />;
     return <div className={`${size} rounded-full flex items-center justify-center font-bold text-white border border-white/20 ${entity.gender === 'M' ? 'bg-blue-600' : 'bg-pink-600'}`}>{entity.name.charAt(0).toUpperCase()}</div>;
   };
@@ -143,9 +160,33 @@ export const Segment2GamePanel: React.FC<Segment2GamePanelProps> = ({
                   <button
                     key={entity.id}
                     onClick={() => handleAwardPoints(entity.id, entity.name)}
-                    className="py-3 px-4 bg-white/5 hover:bg-secondary hover:text-white border border-white/10 rounded-xl font-bold transition-all truncate"
+                    className="py-3 px-4 bg-white/5 hover:bg-secondary hover:text-white border border-white/10 rounded-xl font-bold transition-all truncate flex items-center gap-3"
                   >
-                    {entity.name}
+                    {mode === 'TEAM' ? (
+                      entity.image ? (
+                        <img
+                          src={entity.image}
+                          alt={entity.name}
+                          className="w-10 h-10 rounded-md object-cover border border-white/10 cursor-pointer"
+                          onClick={(e) => { e.stopPropagation(); setSelectedImage(entity.image); }}
+                        />
+                      ) : (
+                        <div className="w-10 h-10 rounded-md bg-secondary flex items-center justify-center text-white"><Users className="w-1/2 h-1/2" /></div>
+                      )
+                    ) : (
+                      entity.avatar ? (
+                        <img
+                          src={entity.avatar}
+                          alt={entity.name}
+                          className="w-10 h-10 rounded-full object-cover border border-white/10 cursor-pointer"
+                          onClick={(e) => { e.stopPropagation(); setSelectedImage(entity.avatar); }}
+                        />
+                      ) : (
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-white border border-white/10 ${entity.gender === 'M' ? 'bg-blue-600' : 'bg-pink-600'}`}>{entity.name.charAt(0).toUpperCase()}</div>
+                      )
+                    )}
+
+                    <span className="truncate">{entity.name}</span>
                   </button>
                 ))}
               </div>
@@ -161,7 +202,17 @@ export const Segment2GamePanel: React.FC<Segment2GamePanelProps> = ({
                   {winningEntityName ? (
                     <>
                       <div className="text-sm text-gray-400">Punkty przyznane dla:</div>
-                      <div className="text-2xl font-bold text-green-400">{winningEntityName} (+10 pkt)</div>
+                      <div className="flex items-center gap-3">
+                        {winningEntityId && (() => {
+                          const ent = (mode === 'INDIVIDUAL' ? players : teams).find(e => e.id === winningEntityId);
+                          if (ent && (mode === 'TEAM' ? ent.image : ent.avatar)) {
+                            const src = mode === 'TEAM' ? ent.image : ent.avatar;
+                            return <img src={src} alt={ent.name} className="w-12 h-12 rounded-md object-cover border border-white/20 cursor-pointer" onClick={() => setSelectedImage(src ?? null)} />;
+                          }
+                          return null;
+                        })()}
+                        <div className="text-2xl font-bold text-green-400">{winningEntityName} (+10 pkt)</div>
+                      </div>
                     </>
                   ) : (
                     <div className="text-xl font-bold text-gray-400">Brak punktów w tej rundzie.</div>
@@ -224,6 +275,8 @@ export const Segment2GamePanel: React.FC<Segment2GamePanelProps> = ({
           </div>
         </div>
       )}
+      <AvatarModal src={selectedImage} onClose={() => setSelectedImage(null)} />
     </div>
   );
 };
+

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { GameMode, Player, Team } from '../types';
 import { SEGMENT4_CATEGORIES } from '../constants';
 import { Trophy, Clock, CheckCircle, XCircle, Gavel, Play, ArrowRight, X, Edit2, Save, Timer, Users, LifeBuoy } from 'lucide-react';
+import AvatarModal from './AvatarModal';
 
 interface Segment4GamePanelProps {
   mode: GameMode;
@@ -30,6 +31,7 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
   const [tieBreakerDuration, setTieBreakerDuration] = useState<number>(30);
   const [bids, setBids] = useState<Record<string, number>>({});
   const [winnerId, setWinnerId] = useState<string | null>(null);
+  const [winningEntityId, setWinningEntityId] = useState<string | null>(null);
   const [winnerBid, setWinnerBid] = useState<number>(0);
   const [tiedIds, setTiedIds] = useState<string[]>([]);
   const [currentInput, setCurrentInput] = useState("");
@@ -38,6 +40,7 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
   const [roundResult, setRoundResult] = useState<'WIN' | 'LOSE' | null>(null);
   const [tieBreakerPoints, setTieBreakerPoints] = useState<Record<string, number>>({});
   const [editingScore, setEditingScore] = useState<{ id: string, name: string, score: number } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const entities = mode === 'INDIVIDUAL' ? players : teams;
 
@@ -81,6 +84,7 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
 
     if (winners.length === 1) {
       setWinnerId(winners[0]);
+      setWinningEntityId(winners[0]);
       setWinnerBid(maxBid);
       setCorrectAnswers([]);
       setWrongAnswers([]);
@@ -143,6 +147,7 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
     const currentScore = entities.find(e => e.id === winnerId)?.score || 0;
     onUpdateScore(winnerId, currentScore + 10);
     setRoundResult('WIN');
+    setWinningEntityId(null);
     setPhase('ROUND_SUMMARY');
   };
 
@@ -151,6 +156,7 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
     const currentScore = entities.find(e => e.id === winnerId)?.score || 0;
     onUpdateScore(winnerId, currentScore - 10);
     setRoundResult('LOSE');
+    setWinningEntityId(null);
     setPhase('ROUND_SUMMARY');
   };
 
@@ -185,7 +191,18 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
   };
 
   const renderAvatar = (entity: any, size: string = "w-8 h-8") => {
-    if (mode === 'TEAM') return <div className={`${size} rounded-lg bg-secondary flex items-center justify-center text-white`}><Users className="w-1/2 h-1/2" /></div>;
+    if (mode === 'TEAM') {
+      return (
+        <img 
+          src={(entity as Team).image} 
+          alt={entity.name} 
+          className={`${size} rounded-lg object-cover border border-white/20`}
+          onError={(e) => {
+            (e.target as HTMLImageElement).style.display = 'none';
+          }}
+        />
+      );
+    }
     if (entity.avatar) return <img src={entity.avatar} alt={entity.name} className={`${size} rounded-full object-cover border border-white/20`} />;
     return <div className={`${size} rounded-full flex items-center justify-center font-bold text-white border border-white/20 ${entity.gender === 'M' ? 'bg-blue-600' : 'bg-pink-600'}`}>{entity.name.charAt(0).toUpperCase()}</div>;
   };
@@ -227,7 +244,10 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {entities.map(entity => (
                   <div key={entity.id} className="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center justify-between">
-                     <div className="flex items-center gap-2 font-bold">{renderAvatar(entity, "w-6 h-6")} {entity.name}</div>
+                     <div className="flex items-center gap-2 font-bold">
+                       {renderAvatar(entity, "w-6 h-6")}
+                       {entity.name}
+                     </div>
                      <input type="number" min="0" max={currentCategory.maxValue} placeholder="0" value={bids[entity.id] || ''} onChange={(e) => handleBidChange(entity.id, e.target.value)} className="w-20 bg-black/30 border border-white/20 rounded-lg px-3 py-2 text-center text-xl font-bold focus:border-yellow-500 focus:outline-none" />
                   </div>
                 ))}
@@ -256,7 +276,28 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
 
         {phase === 'GAMEPLAY' && winnerId && (
            <div className="bg-surface p-6 rounded-2xl border border-white/10 animate-fade-in">
-              <div className="bg-yellow-500/20 border border-yellow-500/50 p-4 rounded-xl mb-6 text-center"><p className="text-yellow-200 text-sm uppercase">Licytację wygrywa</p><h2 className="text-3xl font-black text-white mb-1">{getEntityName(winnerId)}</h2><p className="text-xl font-bold text-yellow-400">Deklaracja: {winnerBid}</p></div>
+              <div className="bg-yellow-500/20 border border-yellow-500/50 p-4 rounded-xl mb-6 text-center">
+                <p className="text-yellow-200 text-sm uppercase">Licytację wygrywa</p>
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  {mode === 'TEAM' && (
+                    <img 
+                      src={(entities.find(e => e.id === winnerId) as Team)?.image} 
+                      alt={getEntityName(winnerId)} 
+                      className="w-12 h-12 rounded-lg object-cover border border-white/20 cursor-pointer hover:opacity-80 transition-opacity" 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const entity = entities.find(ent => ent.id === winnerId) as Team;
+                        if (entity?.image) setSelectedImage(entity.image);
+                      }}
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
+                  )}
+                  <h2 className="text-3xl font-black text-white">{getEntityName(winnerId)}</h2>
+                </div>
+                <p className="text-xl font-bold text-yellow-400">Deklaracja: {winnerBid}</p>
+              </div>
               <div className="flex gap-2 mb-6"><input type="text" value={currentInput} onChange={(e) => setCurrentInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && validateAnswer()} placeholder="Wpisz odpowiedź..." className="flex-1 bg-dark border border-white/20 rounded-xl px-4 py-3 text-lg focus:border-yellow-500 focus:outline-none" autoFocus /><button onClick={validateAnswer} className="bg-primary hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-bold">Dodaj</button></div>
               <div className="grid grid-cols-2 gap-4">
                  <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-4 min-h-[200px]"><h3 className="text-green-400 font-bold mb-3 flex items-center gap-2"><CheckCircle className="w-5 h-5" /> Poprawne ({correctAnswers.length}/{winnerBid})</h3><ul className="space-y-1">{correctAnswers.map((ans, idx) => (<li key={idx} className="text-green-100 border-b border-green-500/10 pb-1">{ans}</li>))}</ul></div>
@@ -281,7 +322,22 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
               <li key={entity.id} className="flex justify-between items-center p-2 rounded bg-white/5 border border-white/5">
                 <div className="flex items-center gap-2 overflow-hidden">
                   <span className={`font-mono text-sm ${idx === 0 ? 'text-yellow-400 font-bold' : 'text-gray-400'}`}>#{idx + 1}</span>
-                  {renderAvatar(entity)}
+                  {mode === 'TEAM' && (entity as Team).image ? (
+                    <img 
+                      src={(entity as Team).image} 
+                      alt={entity.name} 
+                      className="w-6 h-6 rounded-lg object-cover border border-white/20 cursor-pointer hover:opacity-80 transition-opacity"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedImage((entity as Team).image);
+                      }}
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
+                  ) : (
+                    renderAvatar(entity)
+                  )}
                   <span className="truncate max-w-[100px] text-sm">{entity.name}</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -317,6 +373,8 @@ export const Segment4GamePanel: React.FC<Segment4GamePanelProps> = ({
           </div>
         </div>
       )}
+
+      <AvatarModal src={selectedImage} onClose={() => setSelectedImage(null)} />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { GameMode, Player, Team, MusicPair } from '../types';
 import { MUSIC_PAIRS } from '../constants';
 import { Trophy, ArrowRight, XCircle, Music, Edit2, PlayCircle, PauseCircle, Volume2, Save, X, Star, CheckCircle2, Users, LifeBuoy, Pause, Play, RotateCcw } from 'lucide-react';
+import AvatarModal from './AvatarModal';
 
 interface Segment3GamePanelProps {
   mode: GameMode;
@@ -37,6 +38,8 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
   const [showAnswerButtonEnabled, setShowAnswerButtonEnabled] = useState(false);
   const [scoringCandidate, setScoringCandidate] = useState<{ id: string, name: string } | null>(null);
   const [editingScore, setEditingScore] = useState<{ id: string, name: string, score: number } | null>(null);
+  const [winningEntityId, setWinningEntityId] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const loadNextRound = () => {
     const availablePairs = MUSIC_PAIRS.filter(p => !usedIds.includes(p.id));
@@ -51,6 +54,7 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
     setPhase('IDLE');
     setIsPaused(false);
     setWinningEntityName(null);
+    setWinningEntityId(null);
     setPointsAwarded(0);
     setShowAnswerButtonEnabled(false);
     setScoringCandidate(null);
@@ -140,6 +144,7 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
     onUpdateScore(scoringCandidate.id, currentScore + points);
     setPhase('FINISHED');
     setWinningEntityName(scoringCandidate.name);
+    setWinningEntityId(scoringCandidate.id);
     setPointsAwarded(points);
     setScoringCandidate(null);
   };
@@ -148,6 +153,7 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
     if (audioRef.current) audioRef.current.pause();
     setPhase('FINISHED');
     setWinningEntityName(null);
+    setWinningEntityId(null);
     setPointsAwarded(0);
   };
 
@@ -174,7 +180,19 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
   };
 
   const renderAvatar = (entity: any, size: string = "w-8 h-8") => {
-    if (mode === 'TEAM') return <div className={`${size} rounded-lg bg-secondary flex items-center justify-center text-white`}><Users className="w-1/2 h-1/2" /></div>;
+    if (mode === 'TEAM') {
+      if (entity.image) {
+        return (
+          <img
+            src={entity.image}
+            alt={entity.name}
+            className={`${size} rounded-md object-cover border border-white/20 cursor-pointer`}
+            onClick={() => setSelectedImage(entity.image)}
+          />
+        );
+      }
+      return <div className={`${size} rounded-lg bg-secondary flex items-center justify-center text-white`}><Users className="w-1/2 h-1/2" /></div>;
+    }
     if (entity.avatar) return <img src={entity.avatar} alt={entity.name} className={`${size} rounded-full object-cover border border-white/20`} />;
     return <div className={`${size} rounded-full flex items-center justify-center font-bold text-white border border-white/20 ${entity.gender === 'M' ? 'bg-blue-600' : 'bg-pink-600'}`}>{entity.name.charAt(0).toUpperCase()}</div>;
   };
@@ -259,7 +277,33 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
               <p className="text-gray-400 mb-4 uppercase tracking-widest text-sm">Wybierz drużynę:</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {entities.map(entity => (
-                  <button key={entity.id} onClick={() => handleTeamClick(entity.id, entity.name)} className="py-3 px-4 bg-white/5 hover:bg-purple-600 hover:text-white border border-white/10 rounded-xl font-bold transition-all truncate">{entity.name}</button>
+                  <button key={entity.id} onClick={() => handleTeamClick(entity.id, entity.name)} className="py-3 px-4 bg-white/5 hover:bg-purple-600 hover:text-white border border-white/10 rounded-xl font-bold transition-all truncate flex items-center gap-3">
+                    {mode === 'TEAM' ? (
+                      entity.image ? (
+                        <img
+                          src={entity.image}
+                          alt={entity.name}
+                          className="w-10 h-10 rounded-md object-cover border border-white/10 cursor-pointer"
+                          onClick={(e) => { e.stopPropagation(); setSelectedImage(entity.image); }}
+                        />
+                      ) : (
+                        <div className="w-10 h-10 rounded-md bg-secondary flex items-center justify-center text-white"><Users className="w-1/2 h-1/2" /></div>
+                      )
+                    ) : (
+                      entity.avatar ? (
+                        <img
+                          src={entity.avatar}
+                          alt={entity.name}
+                          className="w-10 h-10 rounded-full object-cover border border-white/10 cursor-pointer"
+                          onClick={(e) => { e.stopPropagation(); setSelectedImage(entity.avatar); }}
+                        />
+                      ) : (
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-white border border-white/10 ${entity.gender === 'M' ? 'bg-blue-600' : 'bg-pink-600'}`}>{entity.name.charAt(0).toUpperCase()}</div>
+                      )
+                    )}
+
+                    <span className="truncate">{entity.name}</span>
+                  </button>
                 ))}
               </div>
               <div className="mt-4">
@@ -272,7 +316,18 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
                   {winningEntityName ? (
                     <>
                       <div className="text-sm text-gray-400">Punkty przyznane dla:</div>
-                      <div className="flex items-center gap-2"><span className="text-2xl font-bold text-green-400">{winningEntityName}</span><span className="bg-green-500 text-black text-xs font-bold px-2 py-1 rounded">+{pointsAwarded} pkt</span></div>
+                      <div className="flex items-center gap-3">
+                        {winningEntityId && (() => {
+                          const ent = (mode === 'INDIVIDUAL' ? players : teams).find(e => e.id === winningEntityId);
+                          if (ent && (mode === 'TEAM' ? ent.image : ent.avatar)) {
+                            const src = mode === 'TEAM' ? ent.image : ent.avatar;
+                            return <img src={src} alt={ent.name} className="w-12 h-12 rounded-md object-cover border border-white/20 cursor-pointer" onClick={() => setSelectedImage(src ?? null)} />;
+                          }
+                          return null;
+                        })()}
+                        <span className="text-2xl font-bold text-green-400">{winningEntityName}</span>
+                        <span className="bg-green-500 text-black text-xs font-bold px-2 py-1 rounded">+{pointsAwarded} pkt</span>
+                      </div>
                     </>
                   ) : <div className="text-xl font-bold text-gray-400">Brak punktów.</div>}
                </div>
@@ -343,6 +398,7 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
           </div>
         </div>
       )}
+      <AvatarModal src={selectedImage} onClose={() => setSelectedImage(null)} />
     </div>
   );
 };

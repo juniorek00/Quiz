@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { GameConfig, GameMode, Player, Team, Question, LifelineType } from '../types';
 import { HelpCircle, RefreshCw, Zap, Trophy, SkipForward, Clock, Shuffle, Edit2, X, Save, Users, LifeBuoy } from 'lucide-react';
+import AvatarModal from './AvatarModal';
 
 interface GamePanelProps {
   mode: GameMode;
@@ -64,6 +65,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   const [showHint, setShowHint] = useState<boolean>(false);
   
   const [editingScore, setEditingScore] = useState<{ id: string, name: string, score: number } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // --- Derived Data ---
   const getCurrentEntity = () => {
@@ -257,8 +259,23 @@ export const GamePanel: React.FC<GamePanelProps> = ({
   }, [availableQuestions, turnState, onEndGame, currentPlayers, currentTeams, getAvailableCategories]);
 
   // --- UI Helpers ---
-  const renderAvatar = (entity: any, size: string = "w-10 h-10") => {
+  const renderAvatar = (entity: any, size: string = "w-10 h-10", clickable: boolean = false) => {
     if (mode === 'TEAM') {
+      if (entity.image) {
+        return (
+          <img 
+            src={entity.image} 
+            alt={entity.name} 
+            className={`${size} rounded-lg object-cover border border-white/20 ${clickable ? 'cursor-pointer hover:border-yellow-500/50' : ''}`}
+            onClick={(e) => {
+              if (clickable) {
+                e.stopPropagation();
+                setSelectedImage(entity.image);
+              }
+            }}
+          />
+        );
+      }
       return <div className={`${size} rounded-lg bg-secondary flex items-center justify-center text-white`}><Users className="w-1/2 h-1/2" /></div>;
     }
     if (entity.avatar) {
@@ -291,7 +308,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
             }`}>
               <div className="flex items-center gap-3">
                 <span className="font-mono text-gray-400 text-sm w-4">#{idx + 1}</span>
-                {renderAvatar(entity, "w-8 h-8")}
+                {renderAvatar(entity, "w-8 h-8", mode === 'TEAM')}
                 <span className="truncate max-w-[100px] text-sm">{entity.name}</span>
               </div>
               <div className="flex items-center gap-2">
@@ -326,7 +343,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary" />
           <h2 className="text-gray-400 uppercase tracking-widest text-xs mb-3">Aktualna Tura</h2>
           <div className="flex items-center gap-4">
-             {renderAvatar(currentEntity, "w-16 h-16")}
+             {renderAvatar(currentEntity, "w-16 h-16", mode === 'TEAM')}
              <h1 className="text-4xl font-black text-white">{currentEntity.name}</h1>
           </div>
         </div>
@@ -495,6 +512,8 @@ export const GamePanel: React.FC<GamePanelProps> = ({
       <div className="lg:col-span-1">
          {renderLeaderboard()}
       </div>
+
+      <AvatarModal src={selectedImage} onClose={() => setSelectedImage(null)} />
 
       {editingScore && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
