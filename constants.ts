@@ -36,35 +36,317 @@ export const SEGMENT2_IMAGES_PATH = "images/segment2/";
 
 // Baza klatek filmowych dla Segmentu 2
 export const MOVIE_FRAMES: MovieFramePair[] = [
-  { 
+  {
     id: "m1",
-    key: `${SEGMENT2_IMAGES_PATH}matrix_q.jpg`, 
-    answer: `${SEGMENT2_IMAGES_PATH}matrix_a.jpg`,
-    title: "Matrix"
+    key: `${SEGMENT2_IMAGES_PATH}batman_returns_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}batman_returns_a.jpg`,
+    title: "Batman Returns"
   },
-  { 
+  {
     id: "m2",
-    key: `${SEGMENT2_IMAGES_PATH}titanic_q.jpg`, 
-    answer: `${SEGMENT2_IMAGES_PATH}titanic_a.jpg`,
-    title: "Titanic"
+    key: `${SEGMENT2_IMAGES_PATH}coco_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}coco_a.jpg`,
+    title: "Coco"
   },
-  { 
+  {
     id: "m3",
-    key: `${SEGMENT2_IMAGES_PATH}shrek_q.jpg`, 
-    answer: `${SEGMENT2_IMAGES_PATH}shrek_a.jpg`,
-    title: "Shrek"
+    key: `${SEGMENT2_IMAGES_PATH}dalmatynczyki_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}dalmatynczyki_a.jpg`,
+    title: "101 Dalmatyńczyków"
   },
-  { 
+  {
     id: "m4",
-    key: `${SEGMENT2_IMAGES_PATH}lotr_q.jpg`, 
-    answer: `${SEGMENT2_IMAGES_PATH}lotr_a.jpg`,
+    key: `${SEGMENT2_IMAGES_PATH}django_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}django_a.jpg`,
+    title: "Django Unchained"
+  },
+  {
+    id: "m5",
+    key: `${SEGMENT2_IMAGES_PATH}dzien_swira_q.png`,
+    answer: `${SEGMENT2_IMAGES_PATH}dzien_swira_a.png`,
+    title: "Dzień świra"
+  },
+  {
+    id: "m6",
+    key: `${SEGMENT2_IMAGES_PATH}f1_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}f1_a.jpg`,
+    title: "F1"
+  },
+  {
+    id: "m7",
+    key: `${SEGMENT2_IMAGES_PATH}fast_5_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}fast_5_a.jpg`,
+    title: "Fast Five"
+  },
+  {
+    id: "m8",
+    key: `${SEGMENT2_IMAGES_PATH}grinch_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}grinch_a.jpg`,
+    title: "How the Grinch Stole Christmas"
+  },
+  {
+    id: "m9",
+    key: `${SEGMENT2_IMAGES_PATH}grinch2_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}grinch2_a.jpg`,
+    title: "Grinch 2"
+  },
+  {
+    id: "m10",
+    key: `${SEGMENT2_IMAGES_PATH}gruby_i_chudszy_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}gruby_i_chudszy_a.jpg`,
+    title: "Gruby i chudszy"
+  },
+  {
+    id: "m11",
+    key: `${SEGMENT2_IMAGES_PATH}gwiezdne_wojny_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}gwiezdne_wojny_a.jpg`,
+    title: "Gwiezdne wojny"
+  },
+  {
+    id: "m12",
+    key: `${SEGMENT2_IMAGES_PATH}home_alone_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}home_alone_a.jpg`,
+    title: "Home Alone"
+  },
+  {
+    id: "m13",
+    key: `${SEGMENT2_IMAGES_PATH}hot_to_lose_a_guy_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}hot_to_lose_a_guy_a.jpg`,
+    title: "How to Lose a Guy in 10 Days"
+  },
+  {
+    id: "m14",
+    key: `${SEGMENT2_IMAGES_PATH}igrzyska_smierci_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}igrzyska_smierci_a.jpg`,
+    title: "Igrzyska śmierci"
+  },
+  {
+    id: "m15",
+    key: `${SEGMENT2_IMAGES_PATH}incepcja_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}incepcja_a.jpg`,
+    title: "Incepcja"
+  },
+  {
+    id: "m16",
+    key: `${SEGMENT2_IMAGES_PATH}indiana_jones_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}indiana_jones_a.jpg`,
+    title: "Indiana Jones"
+  },
+  {
+    id: "m17",
+    key: `${SEGMENT2_IMAGES_PATH}iniemamocni_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}iniemamocni_a.png`,
+    title: "Iniemamocni"
+  },
+  {
+    id: "m18",
+    key: `${SEGMENT2_IMAGES_PATH}iron_man_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}iron_man_a.jpg`,
+    title: "Iron Man"
+  },
+  {
+    id: "m19",
+    key: `${SEGMENT2_IMAGES_PATH}karate_kid_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}karate_kid_a.jpg`,
+    title: "The Karate Kid"
+  },
+  {
+    id: "m20",
+    key: `${SEGMENT2_IMAGES_PATH}kill_bill_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}kill_bill_a.jpg`,
+    title: "Kill Bill"
+  },
+  {
+    id: "m21",
+    key: `${SEGMENT2_IMAGES_PATH}konklawe_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}konklawe_a.jpg`,
+    title: "Konklawe"
+  },
+  {
+    id: "m22",
+    key: `${SEGMENT2_IMAGES_PATH}krolewna_sniezka_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}krolewna_sniezka_a.jpg`,
+    title: "Królewna Śnieżka"
+  },
+  {
+    id: "m23",
+    key: `${SEGMENT2_IMAGES_PATH}krwawy_diament_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}krwawy_diament_a.jpg`,
+    title: "Krwawy diament"
+  },
+  {
+    id: "m24",
+    key: `${SEGMENT2_IMAGES_PATH}leon_zawodowiec_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}leon_zawodowiec_a.JPG`,
+    title: "Leon zawodowiec"
+  },
+  {
+    id: "m25",
+    key: `${SEGMENT2_IMAGES_PATH}mask_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}mask_a.jpg`,
+    title: "The Mask"
+  },
+  {
+    id: "m26",
+    key: `${SEGMENT2_IMAGES_PATH}matrix_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}matrix_a.jpg`,
+    title: "The Matrix"
+  },
+  {
+    id: "m27",
+    key: `${SEGMENT2_IMAGES_PATH}men_in_black_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}men_in_black_a.jpg`,
+    title: "Men in Black"
+  },
+  {
+    id: "m28",
+    key: `${SEGMENT2_IMAGES_PATH}men_in_black_II_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}men_in_black_II_a.jpg`,
+    title: "Men in Black II"
+  },
+  {
+    id: "m29",
+    key: `${SEGMENT2_IMAGES_PATH}mickey17_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}mickey17_a.jpg`,
+    title: "Mickey 17"
+  },
+  {
+    id: "m30",
+    key: `${SEGMENT2_IMAGES_PATH}minecraft_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}minecraft_a.jpg`,
+    title: "Minecraft"
+  },
+  {
+    id: "m31",
+    key: `${SEGMENT2_IMAGES_PATH}odlot_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}odlot_a.png`,
+    title: "Odlot"
+  },
+  {
+    id: "m32",
+    key: `${SEGMENT2_IMAGES_PATH}onward_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}onward_a.jpg`,
+    title: "Onward"
+  },
+  {
+    id: "m33",
+    key: `${SEGMENT2_IMAGES_PATH}ratatuj_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}ratatuj_a.png`,
+    title: "Ratatuj"
+  },
+  {
+    id: "m34",
+    key: `${SEGMENT2_IMAGES_PATH}scarface_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}scarface_a.jpg`,
+    title: "Scarface"
+  },
+  {
+    id: "m35",
+    key: `${SEGMENT2_IMAGES_PATH}shining_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}shining_a.jpg`,
+    title: "The Shining"
+  },
+  {
+    id: "m36",
+    key: `${SEGMENT2_IMAGES_PATH}shiningII_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}shiningII_a.jpg`,
+    title: "The Shining II"
+  },
+  {
+    id: "m37",
+    key: `${SEGMENT2_IMAGES_PATH}spider_man_3_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}spider_man_3_a.jpg`,
+    title: "Spider-Man 3"
+  },
+  {
+    id: "m38",
+    key: `${SEGMENT2_IMAGES_PATH}star_wars_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}star_wars_a.jpg`,
+    title: "Star Wars"
+  },
+  {
+    id: "m39",
+    key: `${SEGMENT2_IMAGES_PATH}star_wars_IX_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}star_wars_IX_a.jpg`,
+    title: "Star Wars: Episode IX"
+  },
+  {
+    id: "m40",
+    key: `${SEGMENT2_IMAGES_PATH}stich_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}stich_a.jpg`,
+    title: "Lilo & Stitch"
+  },
+  {
+    id: "m41",
+    key: `${SEGMENT2_IMAGES_PATH}to_nie_kraj_dla_starych_ludzi_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}to_nie_kraj_dla_starych_ludzi_a.jpg`,
+    title: "To nie jest kraj dla starych ludzi"
+  },
+  {
+    id: "m42",
+    key: `${SEGMENT2_IMAGES_PATH}truman_show_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}truman_show_a.jpg`,
+    title: "The Truman Show"
+  },
+  {
+    id: "m43",
+    key: `${SEGMENT2_IMAGES_PATH}wiedzma_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}wiedzma_a.jpg`,
+    title: "Wiedźma"
+  },
+  {
+    id: "m44",
+    key: `${SEGMENT2_IMAGES_PATH}willy_wonka_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}willy_wonka_a.jpg`,
+    title: "Willy Wonka"
+  },
+  {
+    id: "m45",
+    key: `${SEGMENT2_IMAGES_PATH}wladca_pierscieni_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}wladca_pierscieni_a.jpg`,
     title: "Władca Pierścieni"
   },
-  { 
-    id: "m5",
-    key: `${SEGMENT2_IMAGES_PATH}pulp_fiction_q.jpg`, 
-    answer: `${SEGMENT2_IMAGES_PATH}pulp_fiction_a.jpg`,
-    title: "Pulp Fiction"
+  {
+    id: "m46",
+    key: `${SEGMENT2_IMAGES_PATH}wszystko_wszedzie_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}wszystko_wszedzie_a.jpg`,
+    title: "Wszystko wszędzie naraz"
+  },
+  {
+    id: "m47",
+    key: `${SEGMENT2_IMAGES_PATH}zootopia_q.JPG`,
+    answer: `${SEGMENT2_IMAGES_PATH}zootopia_a.jpg`,
+    title: "Zootopia"
+  },
+  {
+    id: "m48",
+    key: `${SEGMENT2_IMAGES_PATH}21_jump_street_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}21_jump_street_a.jpg`,
+    title: "21 Jump Street"
+  },
+  {
+    id: "m49",
+    key: `${SEGMENT2_IMAGES_PATH}2012_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}2012_a.jpg`,
+    title: "2012"
+  },
+  {
+    id: "m50",
+    key: `${SEGMENT2_IMAGES_PATH}akademia_policyjna_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}akademia_policyjna_a.jpg`,
+    title: "Akademia policyjna"
+  },
+  {
+    id: "m51",
+    key: `${SEGMENT2_IMAGES_PATH}back_to_the_future_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}back_to_the_future_a.jpg`,
+    title: "Back to the Future"
+  },
+  {
+    id: "m52",
+    key: `${SEGMENT2_IMAGES_PATH}bad_boys_q.jpg`,
+    answer: `${SEGMENT2_IMAGES_PATH}bad_boys_a.jpg`,
+    title: "Bad Boys"
   }
 ];
 
