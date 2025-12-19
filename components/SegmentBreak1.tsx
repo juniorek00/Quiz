@@ -7,15 +7,31 @@ interface SegmentBreak1Props {
 
 const SegmentBreak1: React.FC<SegmentBreak1Props> = ({ onContinue }) => {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="text-center space-y-8">
-        <h1 className="text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-green-400 to-primary animate-pulse">
+    <div className="max-w-2xl mx-auto p-8 bg-surface rounded-xl shadow-2xl border border-white/10 animate-fade-in">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
           SEGMENT 1 ZAKOŃCZONY!
         </h1>
-        <p className="text-2xl text-gray-300">Quiz Tekstowy - Świetna gra!</p>
+        <p className="text-gray-300">
+          W tej części gry uczestnicy muszą rozpoznać film na podstawie jednej klatki.
+          Wygrywa ta drużyna (lub gracz), która pierwsza zgłosi się i poda poprawny tytuł.
+        </p>
+      </div>
+
+      <div className="bg-dark/50 p-6 rounded-lg mb-8 border-l-4 border-secondary">
+        <h3 className="font-bold text-lg mb-2">Zasady:</h3>
+        <ul className="list-disc list-inside space-y-2 text-gray-400">
+          <li>Wyświetlana jest losowa klatka z filmu.</li>
+          <li>Prowadzący klika nazwę drużyny, która odgadła poprawnie.</li>
+          <li>Za poprawną odpowiedź przyznawane jest <strong>10 punktów</strong>.</li>
+          <li>Punkty sumują się z wynikiem z poprzedniego segmentu.</li>
+        </ul>
+      </div>
+
+      <div className="flex flex-col items-center gap-6">
         <button
           onClick={onContinue}
-          className="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-secondary hover:brightness-110 text-white font-bold py-4 px-8 rounded-xl text-xl transition-all shadow-lg"
+          className="w-full py-4 rounded-xl text-xl font-bold text-white shadow-lg transition-all flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-secondary hover:brightness-110"
         >
           <Play className="w-6 h-6 fill-current" />
           Dalej
