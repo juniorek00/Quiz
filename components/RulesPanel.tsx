@@ -20,14 +20,19 @@ const RulesPanel: React.FC<RulesPanelProps> = ({ mode, rounds, categories, onCon
         <li>Każdy uczestnik / drużyna odpowiada po kolei na pytania.</li>
         <li>Masz <strong>60 sekund</strong> na udzielenie odpowiedzi każdorazowo.</li>
         <li>Poprawna odpowiedź daje <strong>+10 punktów</strong>.</li>
+        <li>Prowadzący mogą dodać lub zabrać punkty w trakcie trwania całego Quizu.</li>
+        <li>Ujemne punkty są za podpowiadanie przez drużyne przeciwną. </li>
+        <li>W takim wypadku drużyna odpowiadająca nie dostaje punktów a przeciwna traci 10 punktów</li>
         <li>Do dyspozycji są koła ratunkowe: <strong>50/50</strong>, <strong>Podpowiedź</strong>, <strong>Wymiana</strong>.</li>
         <li>Jeżeli skończą się pytania w aktywnych kategoriach, gra zakończy się automatycznie.</li>
+        <li>ZAKAZ UŻYWANIA ZEWNĘTRZNYCH ŹRÓDEŁ INFORMACJI</li>
+        <li>Prowadzący mają zawsze racje, Łatwo z wami</li>
       </ul>
 
       <div className="mb-4 text-sm text-gray-300">
         <div><strong>Tryb:</strong> {mode === 'INDIVIDUAL' ? 'Indywidualny' : 'Drużynowy'}</div>
         <div><strong>Liczba rund:</strong> {rounds}</div>
-        <div><strong>Wybrane kategorie ({categories.length}):</strong> {categories.slice(0,6).join(', ')}{categories.length>6? ' ...' : ''}</div>
+        {/* <div><strong>Wybrane kategorie ({categories.length}):</strong> {categories.slice(0,6).join(', ')}{categories.length>6? ' ...' : ''}</div> */}
       </div>
 
       <div className="flex gap-3">

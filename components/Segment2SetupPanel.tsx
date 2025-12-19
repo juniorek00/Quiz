@@ -27,6 +27,7 @@ export const Segment2SetupPanel: React.FC<Segment2SetupPanelProps> = ({ onStartS
         </h1>
         <p className="text-gray-300">
           W tej części gry uczestnicy muszą rozpoznać film na podstawie jednej klatki.
+          Kapitanowie drużyn wyznaczają, kolejność uczestników którzy będą odpowiadać.
           Wygrywa ta drużyna (lub gracz), która pierwsza zgłosi się i poda poprawny tytuł.
         </p>
       </div>
@@ -37,7 +38,7 @@ export const Segment2SetupPanel: React.FC<Segment2SetupPanelProps> = ({ onStartS
           <li>Wyświetlana jest losowa klatka z filmu.</li>
           <li>Prowadzący klika nazwę drużyny, która odgadła poprawnie.</li>
           <li>Za poprawną odpowiedź przyznawane jest <strong>10 punktów</strong>.</li>
-          <li>Punkty sumują się z wynikiem z poprzedniego segmentu.</li>
+          <li>Prowadzący wskazuje drużynę,która zgłosiła się pierwsza</li>
         </ul>
       </div>
 
