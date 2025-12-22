@@ -16,7 +16,7 @@ import RulesPanel from './components/RulesPanel';
 import SegmentBreak1 from './components/SegmentBreak1';
 import SegmentBreak2 from './components/SegmentBreak2';
 import SegmentBreak3 from './components/SegmentBreak3';
-// import SegmentBreak4 from './components/SegmentBreak4';
+import SegmentBreak4 from './components/SegmentBreak4';
 
 function App() {
   const [appState, setAppState] = useState<AppState>('SETUP');
@@ -154,6 +154,8 @@ function App() {
       setAppState('SEGMENT3_SETUP');
     } else if (nextStage === 'SEGMENT4') {
       setAppState('SEGMENT4_SETUP');
+    } else if (nextStage === 'END_GAME') {
+      setAppState('SUMMARY');
     }
   };
 
@@ -188,7 +190,7 @@ function App() {
       // Koniec gry po segmencie 4
       setNextStage('END_GAME');
       setCompletedSegment(4);
-      setAppState('SUMMARY');
+      setAppState('SEGMENT_BREAK');
     };
 
   // --- Force Skip Logic ---
@@ -333,9 +335,9 @@ function App() {
               <SegmentBreak3 onContinue={handleContinueFromBreak} />
             )}
 
-            {/* {appState === 'SEGMENT_BREAK' && completedSegment === 4 && (
+            {appState === 'SEGMENT_BREAK' && completedSegment === 4 && (
               <SegmentBreak4 onContinue={handleContinueFromBreak} />
-            )} */}
+            )}
 
             {appState === 'GAME' && (
               <GamePanel 
