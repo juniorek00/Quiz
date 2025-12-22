@@ -379,7 +379,6 @@ export const Segment3GamePanel: React.FC<Segment3GamePanelProps> = ({
       </div>
 
 
-
       {editingScore && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
           <div className="bg-surface border border-white/10 p-6 rounded-2xl w-full max-w-sm shadow-2xl">
