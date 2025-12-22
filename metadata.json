@@ -1,0 +1,5 @@
+{
+  "name": "BackupQuiz",
+  "description": "A dynamic quiz application supporting individual and team modes with lifelines, category selection, and automated team balancing.",
+  "requestFramePermissions": []
+}

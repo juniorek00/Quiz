@@ -1,0 +1,599 @@
+﻿ID;Kategoria;Pytanie;Odpowiedz A;Odpowiedz B;Odpowiedz C;Odpowiedz D;Poprawna odpowiedz
+1;Nauka;Który z niżej wymienionych naukowców, był jednym z 3 osób, które skonstruowały pierwszy tranzystor?;;;;;
+2;Nauka;Jak nazywa się cząstka bez ładunku w atomie?;Proton;Elektron;Neutron;Jądro;Neutron
+3;Nauka;Jaka planeta znajduje się najbliżej Słońca?;Wenus;Ziemia;Mars;Merkury;Merkury
+4;Nauka;Jaki gaz przeważa w atmosferze Ziemi?;Tlen;Azot;Dwutlenek węgla;Wodór;Azot
+5;Nauka;Ile par chromosomów posiada zdrowy człowiek?;23;46;21;12;23
+6;Nauka;Jaka jest prędkość światła w próżni (w przybliżeniu)?;300 000 km/s;150 000 km/s;1000 km/s;300 000 m/s;300 000 km/s
+7;Nauka;Jak nazywa się najtwardszy minerał w skali Mohsa?;Kwarc;Topaz;Diament;Korund;Diament
+8;Nauka;Ile kości (w przybliżeniu) ma dorosły człowiek?;150;206;300;500;206
+9;Nauka;Jaka jest największa planeta w Układzie Słonecznym?;Saturn;Jowisz;Uran;Neptun;Jowisz
+10;Nauka;W jakiej jednostce mierzymy siłę?;Wat;Dżul;Niuton;Wolt;Niuton
+11;Nauka;Który organ produkuje insulinę?;Wątroba;Nerki;Trzustka;Żołądek;Trzustka
+12;Nauka;Jak nazywa się pierwsza owca sklonowana z komórek dorosłych?;Molly;Dolly;Polly;Holly;Dolly
+13;Nauka;Jaki metal jest ciekły w temperaturze pokojowej?;Złoto;Ołów;Rtęć;Aluminium;Rtęć
+14;Nauka;Jak nazywa się galaktyka, w której żyjemy?;Andromeda;Droga Mleczna;Trójkąt;Wielki Obłok Magellana;Droga Mleczna
+15;Nauka;Jaki jest najlżejszy pierwiastek?;Hel;Tlen;Wodór;Lit;Wodór
+16;Nauka;Jak nazywa się proces parowania wody z liści roślin?;Transpiracja;Kondensacja;Sublimacja;Ewaporacja;Transpiracja
+17;Nauka;Kto sformułował prawo wyporu (ciało zanurzone w cieczy...)?;Pitagoras;Archimedes;Euklides;Platon;Archimedes
+18;Nauka;"Co to jest ""czarna dziura""?";Pustka w kosmosie;Obiekt o ogromnej grawitacji;Ciemna gwiazda;Dziura w atmosferze;Obiekt o ogromnej grawitacji
+19;Nauka;Jak nazywa się największa tętnica w ciele człowieka?;Żyła główna;Aorta;Tętnica udowa;Tętnica szyjna;Aorta
+20;Nauka;Z czego głównie składa się Słońce?;Z węgla i tlenu;Z wodoru i helu;Z żelaza i niklu;Z azotu;Z wodoru i helu
+21;Nauka;Jaka jest temperatura zera bezwzględnego (0 Kelvinów)?;-100°C;-273,15°C;0°C;-1000°C;-273,15°C
+22;Nauka;Jak nazywa się nauka o owadach?;Ichtiologia;Entomologia;Ornitologia;Herpetologia;Entomologia
+23;Nauka;Co przewodzi prąd w metalach?;Protony;Neutrony;Elektrony;Jony;Elektrony
+24;Nauka;Jaki kolor ma krew bogata w tlen?;Ciemnoniebieski;Jasnoczerwony;Fioletowy;Bordowy;Jasnoczerwony
+25;Nauka;Jak nazywa się urządzenie do pomiaru trzęsień ziemi?;Barometr;Sejsmograf;Termometr;Higrometr;Sejsmograf
+26;Nauka;"Jaki gaz nazywamy ""gazem rozweselającym""?";Hel;Podtlenek azotu;Metan;Chlor;Podtlenek azotu
+27;Nauka;"Co to jest ""supernowa""?";Nowa gwiazda;Wybuch gwiazdy;Rodzaj komety;Czarna dziura;Wybuch gwiazdy
+28;Nauka;"Co to jest ""magma""?";Lawa na powierzchni;Roztopiona skała pod ziemią;Rodzaj minerału;Popiół wulkaniczny;Roztopiona skała pod ziemią
+29;Nauka;Jak nazywa się jednostka oporu elektrycznego?;Amper;Wolt;Om;Wat;Om
+30;Nauka;"Co to jest ""rok świetlny""?";Jednostka czasu;Jednostka odległości;Jednostka jasności;Jednostka masy;Jednostka odległości
+31;Nauka;Która grupa krwi jest uniwersalnym dawcą (krwinek)?;A;B;AB;0 (Rh-);0 (Rh-)
+32;Nauka;Jaki pierwiastek barwi krew na czerwono (w hemoglobinie)?;Miedź;Żelazo;Magnez;Cynk;Żelazo
+33;Nauka;"Co to jest ""kwark""?";Rodzaj sera;Cząstka elementarna;Jednostka miary;Gwiazda;Cząstka elementarna
+34;Nauka;Co jest głównym składnikiem diamentu?;Krzem;Węgiel;Azot;Siarka;Węgiel
+35;Nauka;Jaki organ w ciele człowieka filtruje krew?;Serce;Płuca;Nerki;Żołądek;Nerki
+36;Nauka;"Co to jest ""pH 7""?";Odczyn kwaśny;Odczyn zasadowy;Odczyn obojętny;Odczyn toksyczny;Odczyn obojętny
+37;Nauka;Jakie zwierzę jest symbolem medycyny?;Wąż;Orzeł;Lew;Pies;Wąż
+38;Nauka;Który metal najlepiej przewodzi prąd (z powszechnie znanych)?;Złoto;Miedź;Srebro;Aluminium;Srebro
+39;Nauka;Jak nazywa się największa kość w ciele człowieka?;Piszczelowa;Ramienna;Udowa;Miednica;Udowa
+40;Nauka;Co jest głównym składnikiem gazu ziemnego?;Butan;Propan;Metan;Etan;Metan
+41;Nauka;Jaki kolor ma chlorofil?;Czerwony;Zielony;Niebieski;Żółty;Zielony
+42;Nauka;Kto wynalazł dynamit?;Albert Einstein;Alfred Nobel;Thomas Edison;Isaac Newton;Alfred Nobel
+43;Nauka;Jaki jest symbol chemiczny sodu?;So;Na;Sd;Ni;Na
+44;Nauka;"Co to jest ""Pangea""?";Superkontynent;Ocean;Góra;Planeta;Superkontynent
+45;Nauka;"Co to jest ""laser""?";Światło rozproszone;Wzmocnione światło spójne;Rodzaj dźwięku;Promieniowanie radioaktywne;Wzmocnione światło spójne
+46;Nauka;Jaki jest największy organ człowieka?;Wątroba;Skóra;Mózg;Płuca;Skóra
+47;Nauka;"Co to jest ""osmoza""?";Ruch wody przez błonę;Spalanie tłuszczu;Podział komórki;Ruch mięśni;Ruch wody przez błonę
+48;Nauka;Jak nazywa się pierwsza szczepionka (przeciwko czemu)?;Grypie;Ospie prawdziwej;Polio;Wściekliźnie;Ospie prawdziwej
+49;Nauka;Jak nazywa się galaktyka sąsiadująca z Drogą Mleczną?;Andromeda;Sombrero;Cygaro;Wir;Andromeda
+50;Nauka;Kto odkrył promienie X?;Maria Curie;Wilhelm Roentgen;Becquerel;Tesla;Wilhelm Roentgen
+51;Nauka;"Co to jest ""akcelerator""?";Hamulec;Przyspieszacz cząstek;Rodzaj silnika;Komputer;Przyspieszacz cząstek
+52;Nauka;Kto skonstruował pierwszy teleskop do obserwacji nieba?;Kopernik;Galileusz;Newton;Kepler;Galileusz
+53;Nauka;Jaki kwas znajduje się w żołądku?;Siarkowy;Solny;Octowy;Cytrynowy;Solny
+54;Nauka;"Co to jest ""kometa""?";Spadająca gwiazda;Bryła lodu i pyłu z warkoczem;Planeta;Asteroida;Bryła lodu i pyłu z warkoczem
+55;Nauka;Jak nazywa się nauka o glebach?;Geologia;Pedologia;Geografia;Biologia;Pedologia
+56;Jedzenie i napoje;Z jakiego kwiatu pozyskiwany jest szafran?;Róża;Krokus;Lawenda;Maki;Krokus
+57;Jedzenie i napoje;Głównym składnikiem hummusu jest:;Soczewica;Bób;Ciecierzyca;Groch;Ciecierzyca
+58;Jedzenie i napoje;"Co oznacza słowo ""sushi""?";Surowa ryba;Kwaśny ryż;Rolka;Wodorost;Kwaśny ryż
+59;Jedzenie i napoje;Jaki gaz jest używany do bąbelkowania napojów gazowanych?;Tlen;Azot;Dwutlenek węgla;Hel;Dwutlenek węgla
+60;Jedzenie i napoje;Z czego produkuje się tofu?;Mleko krowie;Ryż;Soja;Migdały;Soja
+61;Jedzenie i napoje;Czym jest Kopi Luwak?;Rodzaj herbaty;Najdroższa kawa;Deser ryżowy;Zupa;Najdroższa kawa
+62;Jedzenie i napoje;Co mierzy skala Scoville'a?;Słodycz;Gęstość;Ostrość;Kwasowość;Ostrość
+63;Jedzenie i napoje;Tradycyjne kimchi pochodzi z:;Japonii;Chin;Korei;Tajlandii;Korei
+64;Jedzenie i napoje;Z jakiego kraju pochodzi rogalik croissant?;Francja;Austria;Włochy;Belgia;Austria
+65;Jedzenie i napoje;Z czego robi się prawdziwy marcepan?;Orzechy włoskie;Migdały;Orzeszki ziemne;Wiórki kokosowe;Migdały
+66;Jedzenie i napoje;Jak nazywa się japońska wódka ryżowa?;Soju;Sake;Mirin;Shochu;Sake
+67;Jedzenie i napoje;Gazpacho to zupa pochodząca z:;Włoch;Hiszpanii;Grecji;Meksyku;Hiszpanii
+68;Jedzenie i napoje;Co to jest bouillabaisse?;Ciasto;Gulasz rybny;Sos;Rodzaj chleba;Gulasz rybny
+69;Jedzenie i napoje;Z jakiego zboża produkuje się whisky bourbon?;Jęczmień;Żyto;Kukurydza;Pszenica;Kukurydza
+70;Jedzenie i napoje;Czym jest foie gras?;Pasztet z wątróbek;Ślimaki;Żabie udka;Kawior;Pasztet z wątróbek
+71;Jedzenie i napoje;Jaki kolor ma wino Chardonnay?;Czerwone;Białe;Różowe;Niebieskie;Białe
+72;Jedzenie i napoje;Co to jest agar-agar?;Ryba;Przyprawa;Substancja żelująca;Rodzaj makaronu;Substancja żelująca
+73;Jedzenie i napoje;Gulasz to narodowa potrawa:;Czech;Słowacji;Węgier;Polski;Węgier
+74;Jedzenie i napoje;Jak nazywa się słynny niebieski ser francuski?;Camembert;Roquefort;Brie;Cheddar;Roquefort
+75;Jedzenie i napoje;Co to jest carpaccio?;Surowe mięso;Pieczona ryba;Makaron;Deser;Surowe mięso
+76;Jedzenie i napoje;Pho to zupa pochodząca z:;Tajlandii;Laosu;Wietnamu;Japonii;Wietnamu
+77;Jedzenie i napoje;Z jakiego kraju pochodzi paella?;Portugalia;Włochy;Hiszpania;Brazylia;Hiszpania
+78;Jedzenie i napoje;Jak nazywa się grzyb poszukiwany przez świnie lub psy?;Borowik;Trufla;Kurka;Rydz;Trufla
+79;Jedzenie i napoje;Co to jest quinoa?;Ryż;Kasza (komosa);Pszenica;Kukurydza;Kasza (komosa)
+80;Jedzenie i napoje;"Jaki owoc jest nazywany ""królem owoców"" i ma silny zapach?";Mango;Durian;Papaja;Ananas;Durian
+81;Jedzenie i napoje;Z czego robi się cydr?;Z gruszek;Ze śliwek;Z jabłek;Z winogron;Z jabłek
+82;Jedzenie i napoje;Tiramisu oznacza dosłownie:;Słodkie życie;Podnieś mnie;Dobranoc;Kocham cię;Podnieś mnie
+83;Jedzenie i napoje;Co to jest wasabi?;Japoński chrzan;Japoński sos sojowy;Ryba;Glon;Japoński chrzan
+84;Jedzenie i napoje;Jaki jest główny składnik piwa nadający goryczkę?;Słód;Chmiel;Drożdże;Woda;Chmiel
+85;Jedzenie i napoje;Co to jest falafel?;Kotlet mięsny;Smażone kulki z ciecierzycy;Rodzaj chleba;Sałatka;Smażone kulki z ciecierzycy
+86;Jedzenie i napoje;Jaki kraj słynie z produkcji syropu klonowego?;USA;Norwegia;Kanada;Rosja;Kanada
+87;Jedzenie i napoje;Baklava to deser typowy dla kuchni:;Tureckiej/Greckiej;Włoskiej;Francuskiej;Hiszpańskiej;Tureckiej/Greckiej
+88;Jedzenie i napoje;Jaki kolor ma dojrzała oliwka na drzewie (zazwyczaj)?;Zielony;Czerwony;Czarny/Fioletowy;Biały;Czarny/Fioletowy
+89;Jedzenie i napoje;Co to jest chia?;Rodzaj herbaty;Nasiona szałwii hiszpańskiej;Owoc egzotyczny;Przyprawa;Nasiona szałwii hiszpańskiej
+90;Jedzenie i napoje;Jak nazywa się sos z żółtek, masła i cytryny (do szparagów)?;Beszamel;Holenderski;Tatarski;Winegret;Holenderski
+91;Jedzenie i napoje;Churros to wypiek pochodzący z:;Meksyku;Argentyny;Hiszpanii;Portugalii;Hiszpanii
+92;Jedzenie i napoje;Głównym składnikiem Musaki jest:;Ziemniak;Bakłażan;Cukinia;Marchew;Bakłażan
+93;Jedzenie i napoje;Jaka część rośliny to cynamon?;Liść;Korzeń;Kora;Owoc;Kora
+94;Jedzenie i napoje;Nori używane do sushi to:;Papier ryżowy;Suszone wodorosty;Liście sałaty;Skóra ryby;Suszone wodorosty
+95;Jedzenie i napoje;Skąd pochodzi Feta?;Włochy;Turcja;Grecja;Bułgaria;Grecja
+96;Jedzenie i napoje;"Co oznacza ""Al dente""?";Na miękko;Na ząb (lekko twarde);Rozgotowane;Surowe;Na ząb (lekko twarde)
+97;Jedzenie i napoje;Jaki alkohol jest robiony z agawy?;Rum;Gin;Tequila;Wódka;Tequila
+98;Jedzenie i napoje;Co to jest ceviche?;Smażona ryba;Ryba w soku z cytrusów;Zupa rybna;Ryba wędzona;Ryba w soku z cytrusów
+99;Jedzenie i napoje;Co to jest ricotta?;Ser pleśniowy;Ser zwarowy;Ser twardy;Ser topiony;Ser zwarowy
+100;Jedzenie i napoje;Skąd pochodzi Tortilla (plackowa)?;Hiszpania;Włochy;Meksyk;Indie;Meksyk
+101;Jedzenie i napoje;Główny składnik tzatziki to jogurt i:;Pomidor;Ogórek;Papryka;Cebula;Ogórek
+102;Jedzenie i napoje;Jaki jest najpopularniejszy banan na świecie?;Gros Michel;Cavendish;Lady Finger;Red Banana;Cavendish
+103;Jedzenie i napoje;Czym jest Tapioka?;Rodzajem ryżu;Skrobią z manioku;Owocem;Orzechem;Skrobią z manioku
+104;Jedzenie i napoje;Lasagne to rodzaj:;Zupy;Makaronu (płatów);Chleba;Mięsa;Makaronu (płatów)
+105;Jedzenie i napoje;Co to jest escargots?;Ślimaki;Małże;Krewetki;Ostrygi;Ślimaki
+106;Jedzenie i napoje;Minestrone to:;Włoska zupa warzywna;Rodzaj makaronu;Deser;Danie mięsne;Włoska zupa warzywna
+107;Jedzenie i napoje;Z czego robi się gnocchi?;Z chleba;Z ziemniaków;Z ryżu;Z kaszy;Z ziemniaków
+108;Jedzenie i napoje;Jaki napój zawiera chininę?;Cola;Tonik;Lemoniada;Sok pomarańczowy;Tonik
+109;Jedzenie i napoje;Ratatouille to danie z:;Mięsa;Warzyw;Ryb;Owoców;Warzyw
+110;Jedzenie i napoje;Jaki orzech jest w środku Rafaello?;Laskowy;Włoski;Migdał;Nerkowiec;Migdał
+111;Jedzenie i napoje;Poutine (frytki z sosem i serem) pochodzi z:;USA;Kanady;Francji;Belgii;Kanady
+112;Jedzenie i napoje;Co to jest halloumi?;Ser cypryjski;Szynka;Chleb;Sos;Ser cypryjski
+113;Jedzenie i napoje;Jaka przyprawa jest najczęściej używana do pierników?;Cynamon/Goździki;Bazylia;Oregano;Papryka;Cynamon/Goździki
+114;Jedzenie i napoje;Z czego zrobiony jest rum?;Z ziemniaków;Z trzciny cukrowej;Z żyta;Z winogron;Z trzciny cukrowej
+115;Jedzenie i napoje;Carbonara (oryginalna) NIE zawiera:;Jajek;Sera Pecorino;Śmietany;Guanciale (boczku);Śmietany
+116;Jedzenie i napoje;Haggis to potrawa narodowa:;Walii;Irlandii;Szkocji;Anglii;Szkocji
+117;Jedzenie i napoje;Czym jest matcha?;Sproszkowaną zieloną herbatą;Kawą;Zupą;Deserem;Sproszkowaną zieloną herbatą
+118;Jedzenie i napoje;Z jakiego mięsa robi się Wiener Schnitzel (oryginalny)?;Wieprzowina;Cielęcina;Kurczak;Wołowina;Cielęcina
+119;Jedzenie i napoje;Miso to pasta z:;Soji (fermentowanej);Ryżu;Fasoli czerwonej;Sezamu;Soji (fermentowanej)
+120;Jedzenie i napoje;Co to jest Sambuca?;Likier anyżowy;Wino;Piwo;Kawa;Likier anyżowy
+121;Jedzenie i napoje;Jak nazywa się chleb indyjski pieczony w piecu tandoor?;Pita;Naan;Tortilla;Bagietka;Naan
+122;Jedzenie i napoje;Gravlax to:;Pieczony łosoś;Łosoś marynowany;Zupa rybna;Ryba w galarecie;Łosoś marynowany
+123;Jedzenie i napoje;Co to jest polenta?;Kasza kukurydziana;Makaron;Rodzaj sera;Sos pomidorowy;Kasza kukurydziana
+124;Jedzenie i napoje;"Jak nazywa się ""masło orzechowe"" z sezamu?";Hummus;Tahini;Pesto;Miso;Tahini
+125;Jedzenie i napoje;Sashimi to:;Ryż z rybą;Sam ryż;Sama surowa ryba (plastry);Zupa rybna;Sama surowa ryba (plastry)
+126;Jedzenie i napoje;Jaki owoc jest symbolem Nowego Jorku?;Jabłko;Gruszka;Brzoskwinia;Wiśnia;Jabłko
+127;Jedzenie i napoje;Z czego jest mleczko kokosowe?;Z wody w środku orzecha;Z miąższu kokosa;Z łupiny;Z liści;Z miąższu kokosa
+128;Jedzenie i napoje;Czym jest yerba mate?;Herbatą;Naparem z ostrokrzewu;Kawą;Kakao;Naparem z ostrokrzewu
+129;Jedzenie i napoje;Creme brulee ma na wierzchu:;Bitą śmietanę;Owoc;Skarmelizowany cukier;Czekoladę;Skarmelizowany cukier
+130;Technologia;Jaki problem technologiczny ogranicza rozwój samochodów wodorowych?;;Magazynowanie wodoru;;;Magazynowanie wodoru
+131;Technologia;Która technologia jako pierwsza umożliwiła masową komunikację „na żywo” na odległość?;Radio;Telewizja;Telefon;Telegraf;Telegraf
+132;Technologia;Co umożliwiło masowe rozpowszechnienie telewizji po II wojnie światowej?;Satelity;Kolorowy obraz;Tania produkcja odbiorników;Internet;Tania produkcja odbiorników
+133;Technologia;Jaki problem rozwiązała technologia kontenerów w transporcie?;Czas przeładunku;Kradzieże;Brak statków;Koszt paliwa;Czas przeładunku
+134;Technologia;Dlaczego papierowe bilety zostały wyparte przez elektroniczne?;Ekologia;Koszt druku;Łatwiejsza kontrola i dystrybucja;Moda;Łatwiejsza kontrola i dystrybucja
+135;Technologia;Dlaczego GPS w mieście bywa niedokładny?;Przez wysokie budynki;Przez dużą ilość użytkowników w danym obszarze;Przez dużą ilość elektrycznych urządzeń;Przez gorszy zasięg w mieście ;Przez wysokie budynki
+136;Technologia;Kto razem z Billem Gatesem założył firmę Microsoft?;Steve Ballmer;Satya Nadella;Jeff Bezos;Paul Allen;Paul Allen
+137;Technologia;Skąd wzięła się nazwa mobilnego systemu operacyjnego Android?;"Od zamiłowania Larry'ego Page'a do filmu ""Łowca Androidów""";Została wybrana losowo na zebraniu zespołu zajmującego się marketingiem ;"Od pseudonimu ""ojca"" Androida - Andy'iego Rubina";Przyśniła się Sergey'owi Brinowi;"Od pseudonimu ""ojca"" Androida - Andy'iego Rubina"
+138;Technologia;W którym roku powstał pierwszy zestaw ikon emoji?;1998;1999;2000;2001;1999
+139;Technologia;Jak nazywa się pierwszy smartwatch przeznaczony dla ludzi niewidomych?;Dot Watch;Blindwatch;Brailly;Quantingo;Dot Watch
+140;Geografia;Które państwo posiada najwięcej stref czasowych?;Rosja;USA;Francja;Chiny;Francja
+141;Geografia;Jaka jest stolica Kazachstanu (stan na 2024 rok)?;Ałmaty;Astana;Taszkent;Biszkek;Astana
+142;Geografia;Która rzeka przecina równik dwukrotnie?;Amazonka;Nil;Kongo;Orinoko;Kongo
+143;Geografia;Jak nazywa się najgłębszy rów oceaniczny na Ziemi?;Rów Tonga;Rów Mariański;Rów Filipiński;Rów Kurylski;Rów Mariański
+144;Geografia;Które państwo w Ameryce Płd. nie ma dostępu do morza?;Urugwaj;Wenezuela;Paragwaj;Ekwador;Paragwaj
+145;Geografia;Który kraj jest największym producentem kakao?;Brazylia;Indonezja;Wybrzeże Kości Sł.;Ghana;WKS
+146;Geografia;W którym kraju leży region Transylwania?;Węgry;Bułgaria;Rumunia;Słowacja;Rumunia
+147;Geografia;Jedyne państwo bez oficjalnej stolicy to:;Monako;Nauru;Watykan;Palau;Nauru
+148;Geografia;Największą wyspą na Morzu Śródziemnym jest:;Cypr;Sardynia;Korsyka;Sycylia;Sycylia
+149;Geografia;Rzeka Dunaj wpada do:;Morza Czarnego;Morza Północnego;Morza Adriatyckiego;Morza Kaspijskiego;M. Czarnego
+150;Geografia;Jak nazywa się najwyższy szczyt Ameryki Północnej?;Mount Logan;Denali;Mount Rainier;Mount Whitney;Denali
+151;Geografia;Lesoto jest enklawą na terytorium którego państwa?;Włoch;RPA;Senegalu;Indii;RPA
+152;Geografia;Gdzie leżą Wyspy Owcze?;O. Spokojny;M. Bałtyckie;Płn. Atlantyk;O. Indyjski;Płn. Atlantyk
+153;Geografia;Które miasto jest stolicą Kanady?;Toronto;Vancouver;Montreal;Ottawa;Ottawa
+154;Geografia;Jak nazywa się najdłuższa rzeka Azji?;Mekong;Jangcy;Żółta Rzeka;Ganges;Jangcy
+155;Geografia;Do jakiego państwa należy wyspa Grenlandia?;Kanada;USA;Norwegia;Dania;Dania
+156;Geografia;W którym kraju znajduje się Kapadocja?;Grecja;Iran;Turcja;Armenia;Turcja
+157;Geografia;Burkina Faso to państwo leżące w:;Ameryce Płd.;Azji;Afryce;Oceanii;Afryce
+158;Geografia;Jezioro Bajkał jest:;Największym;Najgłębszym;Najsłonym;Najwyższym;Najgłębszym
+159;Geografia;Który kraj ma najdłuższą linię brzegową na świecie?;Rosja;Australia;Kanada;Indonezja;Kanada
+160;Geografia;"Który kraj jest nazywany ""Krajem Tysiąca Jezior""?";Szwecja;Kanada;Finlandia;Norwegia;Finlandia
+161;Geografia;Surinam leży w:;Afryce;Azji;Ameryce Płd.;Ameryce Śr.;Ameryce Płd.
+162;Geografia;Które morze oddziela Półwysep Arabski od Afryki?;M. Czerwone;M. Śródziemne;M. Kaspijskie;M. Czarne;M. Czerwone
+163;Geografia;Jak nazywa się rdzenna ludność Nowej Zelandii?;Aborygeni;Maorysi;Inkowie;Lapończycy;Maorysi
+164;Geografia;"Obywatele którego kraju nazywają siebie ""Magyar""?";Mongolii;Węgier;Bułgarii;Estonii;Węgier
+165;Geografia;Który stan USA jest największy powierzchniowo?;Teksas;Kalifornia;Alaska;Montana;Alaska
+166;Geografia;Jaka jest stolica Wietnamu?;Ho Chi Minh;Hanoi;Da Nang;Hue;Hanoi
+167;Geografia;Który kraj graniczy z Portugalią?;Francja;Andora;Hiszpania;Maroko;Hiszpania
+168;Geografia;Wyspy Galapagos należą do:;Kolumbii;Meksyku;Ekwadoru;Peru;Ekwadoru
+169;Geografia;Kontynent o największej średniej wysokości n.p.m. to:;Azja;Ameryka Płn.;Antarktyda;Europa;Antarktyda
+170;Geografia;Góra Kościuszki jest najwyższym szczytem:;Polski;Australii;Nowej Zelandii;Alp;Australii
+171;Filmy i seriale;"Kto wyreżyserował ""Listę Schindlera""?";Martin Scorsese;Steven Spielberg;Roman Polański;Woody Allen;Steven Spielberg
+172;Filmy i seriale;"Jak nazywa się kawiarnia w serialu ""Przyjaciele""?";Central Perk;Star Coffee;Monk's Cafe;Luke's Diner;Central Perk
+173;Filmy i seriale;Który film zdobył najwięcej Oscarów (11) - jeden z trzech rekordzistów?;Ojciec Chrzestny;Władca Pierścieni: Powrót Króla;Gwiezdne Wojny;Forrest Gump;Władca Pierścieni: Powrót Króla
+174;Filmy i seriale;W którym roku odbyła się premiera pierwszego filmu o Harrym Potterze?;1999;2001;2003;2005;2001
+175;Filmy i seriale;"Jak nazywa się główna bohaterka ""Igrzysk Śmierci""?";Bella Swan;Hermione Granger;Katniss Everdeen;Lara Croft;Katniss Everdeen
+176;Filmy i seriale;"Kto zagrał Jokera w ""Mrocznym Rycerzu""?";Jack Nicholson;Jared Leto;Heath Ledger;Joaquin Phoenix;Heath Ledger
+177;Filmy i seriale;"""Seksmisja"" to komedia w reżyserii:";Stanisława Barei;Juliusza Machulskiego;Andrzeja Wajdy;Krzysztofa Kieślowskiego;Juliusza Machulskiego
+178;Filmy i seriale;"Kto jest autorem muzyki do ""Króla Lwa"" (piosenki)?";Phil Collins;Elton John;Hans Zimmer;Sting;Elton John
+179;Filmy i seriale;Kto zagrał rolę Wiedźmina w polskim filmie z 2001 roku?;Marcin Dorociński;Michał Żebrowski;Borys Szyc;Tomasz Karolak;Michał Żebrowski
+180;Filmy i seriale;"Kto wyreżyserował ""Lśnienie""?";Stanley Kubrick;Alfred Hitchcock;John Carpenter;Wes Craven;Stanley Kubrick
+181;Filmy i seriale;"W którym mieście toczy się akcja ""Seks w wielkim mieście""?";Los Angeles;Chicago;Nowy Jork;Miami;Nowy Jork
+182;Filmy i seriale;"Jak nazywa się planeta w filmie ""Avatar""?";Tatooine;Pandora;Arrakis;Mars;Pandora
+183;Filmy i seriale;"Kto jest reżyserem trylogii ""Mroczny Rycerz""?";Tim Burton;Zack Snyder;Christopher Nolan;Joel Schumacher;Christopher Nolan
+184;Filmy i seriale;"""Dzień Świra"" to film z Markiem Kondratem w roli:";Adasia Miauczyńskiego;Jana Kowalskiego;Stefana Siarzewskiego;Franciszka Dolasa;Adasia Miauczyńskiego
+185;Filmy i seriale;"Serial ""Czarnobyl"" wyprodukowała stacja:";Netflix;HBO;Amazon;BBC;HBO
+186;Filmy i seriale;"Kto zagrał główną rolę w ""Pianiście""?";Adrien Brody;Joaquin Phoenix;Jude Law;Ralph Fiennes;Adrien Brody
+187;Filmy i seriale;W którym filmie Bruce Willis gra psychologa dziecięcego?;Szklana Pułapka;Szósty zmysł;Piąty element;Pulp Fiction;Szósty zmysł
+188;Filmy i seriale;"Kto zagrał rolę Hannibala Lectera w ""Milczeniu owiec""?";Anthony Hopkins;Mads Mikkelsen;Brian Cox;Jack Nicholson;Anthony Hopkins
+189;Filmy i seriale;"Polski film ""Bogowie"" opowiada o:";Janie Pawle II;Zbigniewie Relidze;Lechu Wałęsie;Ryszardzie Kapuścińskim;Zbigniewie Relidze
+190;Filmy i seriale;"Serial ""The Office"" (US) dzieje się w firmie sprzedającej:";Papier;Komputery;Samochody;Ubezpieczenia;Papier
+191;Filmy i seriale;"Kto zagrał główną rolę w ""Masce""?";Ben Stiller;Jim Carrey;Adam Sandler;Eddie Murphy;Jim Carrey
+192;Filmy i seriale;Jak nazywa się nagroda przyznawana najgorszym filmom?;Złoty Glob;Złota Malina;Złota Palma;Złoty Lew;Złota Malina
+193;Filmy i seriale;"Kto wyreżyserował ""Incepcję""?";Christopher Nolan;Ridley Scott;James Cameron;Denis Villeneuve;Christopher Nolan
+194;Filmy i seriale;"""Show must go on"" śpiewał zespół Queen, ale w filmie ""Bohemian Rhapsody"" zagrał Freddiego:";Sacha Baron Cohen;Rami Malek;Taron Egerton;Austin Butler;Rami Malek
+195;Filmy i seriale;Polski serial komediowy o mieszkańcach bloku przy Alternatywy 4 wyreżyserował:;Stanisław Bareja;Jerzy Gruza;Andrzej Wajda;Krzysztof Zanussi;Stanisław Bareja
+196;Filmy i seriale;"Jak nazywa się system sztucznej inteligencji w ""Odysei Kosmicznej 2001""?";Skynet;HAL 9000;Jarvis;Ultron;HAL 9000
+197;Filmy i seriale;"Serial ""M jak Miłość"" jest emitowany w Polsce od roku:";1997;2000;2003;2005;2000
+198;Filmy i seriale;Jak nazywa się serial o nauczycielu, który zostaje prezydentem Ukrainy (z Zełenskim)?;Sługa Narodu;Prezydent;Władza;Kijów;Sługa Narodu
+199;Filmy i seriale;"Jak nazywa się miś z ""Księgi Dżungli""?";Baloo;Bagheera;Shere Khan;Kaa;Baloo
+200;Filmy i seriale;"Jak nazywa się główna bohaterka ""Śniadania u Tiffany'ego""?";Holly Golightly;Eliza Doolittle;Scarlett O'Hara;Marilyn Monroe;Holly Golightly
+201;Filmy i seriale;Jak nazywa się fikcyjna marka papierosów pojawiająca się w filmach Tarantino?;Morley;Red Apple;Big Kahuna;Capitol;Red Apple
+202;Filmy i seriale;"Kto odrzucił rolę Neo w ""Matrixie"", aby zagrać w ""Bardzo dzikim zachodzie""?";Brad Pitt;Will Smith;Leonardo DiCaprio;Nicolas Cage;Will Smith
+203;Filmy i seriale;W którym roku odbyła się pierwsza ceremonia wręczenia Oscarów?;1927;1929;1931;1935;1929
+204;Filmy i seriale;"Jak nazywa się bar, w którym spotykają się bohaterowie ""Jak poznałem waszą matkę""?";Central Perk;MacLaren's;Cheers;Monk's;MacLaren's
+205;Filmy i seriale;"Jak nazywa się córka Belli i Edwarda w sadze ""Zmierzch""?";Renesmee;Rosalie;Alice;Esme;Renesmee
+206;Filmy i seriale;Jak nazywa się planeta, z której pochodzi Superman?;Krypton;Cybertron;Vulcan;Tatooine;Krypton
+207;Filmy i seriale;"W którym roku wyemitowano pierwszy odcinek ""Mody na sukces""?";1985;1987;1990;1994;1987
+208;Filmy i seriale;"Jaki numer widnieje na drzwiach mieszkania Moniki w ""Przyjaciołach"" (późniejsze sezony)?";5;20;4;18;20
+209;Filmy i seriale;Który aktor ma najwięcej nominacji do Oscara w historii (wśród mężczyzn)?;Marlon Brando;Robert De Niro;Jack Nicholson;Al Pacino;Jack Nicholson
+210;Filmy i seriale;Kto podkładał głos Dartha Vadera (tylko głos)?;David Prowse;James Earl Jones;Hayden Christensen;Sebastian Shaw;James Earl Jones
+211;Filmy i seriale;"Jak nazywa się miasto, w którym dzieje się akcja ""Simpsonów""?";Quahog;South Park;Springfield;Fairview;Springfield
+212;Filmy i seriale;"Kto wyreżyserował ""Mechaniczną pomarańczę""?";Stanley Kubrick;David Lynch;Ridley Scott;Francis Ford Coppola;Stanley Kubrick
+213;Filmy i seriale;"Kto zagrał rolę Sarumana we ""Władcy Pierścieni""?";Ian McKellen;Christopher Lee;Patrick Stewart;John Hurt;Christopher Lee
+214;Filmy i seriale;"Jak nazywa się miasteczko w serialu ""Stranger Things""?";Hawkins;Derry;Castle Rock;Twin Peaks;Hawkins
+215;Filmy i seriale;"Jaki tytuł nosi pierwszy odcinek ""Gwiezdnych Wojen"" (chronologia fabuły)?";Nowa Nadzieja;Mroczne Widmo;Atak Klonów;Zemsta Sithów;Mroczne Widmo
+216;Filmy i seriale;Kto zagrał rolę Voldemorta w większości filmów?;Ralph Fiennes;Alan Rickman;Gary Oldman;Jason Isaacs;Ralph Fiennes
+217;Filmy i seriale;"Jak nazywa się fikcyjny język w ""Avatarze""?";Klingoński;Dothraki;Na'vi;Sindarin;Na'vi
+218;Filmy i seriale;"W jakim stanie dzieje się akcja ""Breaking Bad""?";Teksas;Kalifornia;Nowy Meksyk;Arizona;Nowy Meksyk
+219;Filmy i seriale;"Jak nazywa się główny bohater serialu ""Peaky Blinders""?";Arthur Shelby;Thomas Shelby;John Shelby;Michael Gray;Thomas Shelby
+220;Filmy i seriale;W którym filmie występuje postać McLovina?;American Pie;Supersamiec (Superbad);Kac Vegas;Projekt X;Supersamiec (Superbad)
+221;Filmy i seriale;"Kto jest twórcą ""Miasteczka South Park""?";Matt Groening;Seth MacFarlane;Trey Parker i Matt Stone;Mike Judge;Trey Parker i Matt Stone
+222;Filmy i seriale;W jakim filmie debiutowała Natalie Portman?;Gwiezdne Wojny;Leon Zawodowiec;Gorączka;Piękna dziewczyna;Leon Zawodowiec
+223;Filmy i seriale;"Jak nazywa się planeta-pustynia w ""Diunie""?";Arrakis;Caladan;Giedi Prime;Kaitain;Arrakis
+224;Filmy i seriale;Kto zagrał rolę Gandalfa?;Christopher Lee;Ian McKellen;Richard Harris;Michael Gambon;Ian McKellen
+225;Filmy i seriale;"Jak nazywa się główny bohater ""Biura""  menadżer regionalny (The Office US)?";David Brent;Michael Scott;Jim Halpert;Dwight Schrute;Michael Scott
+226;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Mają rozmach, skurwysyny.""";Dzień Świra;Kiler;Seksmija;Poranek Kojota;Kiler
+227;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Ewuniu, to był Szakal, przedstawił się i od razu mnie zabił.""";Miś;Psy;Dzień Świra;Kiler-ów 2-óch;Kiler-ów 2-óch
+228;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""You talking to me?""";Pulp Fiction;Święci z Bostonu;American Psycho;Taxi Dirver;Taxi Dirver
+229;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""I'll be back""";Terminator;Blade Runner 2049;Matrix;RoboCop;The Terminator
+230;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Hasta la vista, baby""";12 Małp;Ja, robor;Terminator 2: Dzień Sądu;Ex Machina;Terminator 2: Judgment Day
+231;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""My precious""";Labirynt;Władca Pierścieni: Dwie Wieże;Avatar;Harry Potter: Książe Półkrwi;Władca Pierścieni: Dwie Wieże
+232;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Nazywam się Maximus Decimus Meridius, dowódca Armii Północy, generał Legionów Feliksa i lojalny sługa PRAWDZIWEGO cesarza Marka Aureliusza. Ojciec zamordowanego syna, mąż zamordowanej żony. I dokonam zemsty w tym, lub następnym życiu.""
+(ang) ""My name is Maximus Decimus Meridius, commander of the Armies of the North, General of the Felix Legions and loyal servant to the TRUE emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And I will have my vengeance, in this life or the next.""";Troja;300;Ostatni Legion;Gladiator;Gladiator
+233;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Ale będzie ubaw, męskie rozmowy, takie o życiu i śmierci, a rano… zrobię jajecznicę.""";Skok przez płot;Shrek;Wallace i Gromit: Klątwa Królika;;Shrek
+234;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""(szeptem) To jest ta scena, w której dajecie nogę.""";Madagaskar;Skok przez płot;Shrek;Kung Fu Panda;Shrek
+235;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Minęły osiemdziesiąt cztery lata, a ja nadal pamiętam zapach świeżej farby. Zastawa była nowiutka, a pościel nigdy nie używana.""";Ciekawy przypadek Benjamina Buttona;Wiek Adelaine;Efekt motyla;Titanic;Titanic
+236;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Jestem królem świata!""";Titanic;Złap mnie jeśli potrafisz;Terminal;Cast Away - Poza światem;Titanic
+237;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Pewnie słyszałeś, że nie robimy w branży jeńcobiorczej. Zajmujemy się zabijaniem nazistów i muszę powiedzieć, że interes kwitnie!""";Iron Sky;Jojo Rabbit;Bękarty Wojny;Pianista;Bękarty Wojny
+238;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""To samobójstwo! Nikłe szanse powodzenia! Na co czekamy?""";Harry Potter i więzień Azkabanu;Władca Pierścieni: Powrót króla;Jak wytresować smoka;Opowieści z Narnii: Lew, czarownica i stara szafa;Władca Pierścieni: Powrót króla
+239;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Ale dlaczego właśnie rum?!""";Kapitan Phillips;Goonies;Gwiezdny pył;Piraci z Karaibów: Klątwa Czarnej Perły;Piraci z Karaibów: Klątwa Czarnej Perły
+240;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Brakuje mi zęba? Brak mi siekacza!""";Projekt X;Kac Vegas;Last Vegas;Ted 2;Kac Vegas
+241;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Ciemność, widzę ciemność, ciemność widzę.""";Kingsajz;Seksmisja;Miś;Vabank;Seksmisja
+242;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Albo też wcale nie płuczą ust po myciu zębów. To co oni robią z tą pastą, jedzą ją? Połykają, do kurwy nędzy, co z nią robią? Ja nawet gardło płuczę po myciu zębów. Opłukiwam.""";Kiler;Miś;Dzień świra;Seksmisja;Dzień świra
+243;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Kotlety z psa, chyba zmielone razem z budą.""";Dzień świra;Baby są jakieś inne;7 uczuć;Dzień świstaka;Dzień świra
+244;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Co do was, nieszczęśnicy, najbliższa przyszłość stawia przed panami dwie możliwości. Pierwsza – możecie wyciągnąć żywego Specka spod konia i donieść go do miasta. To jest jakieś 60 kilometrów z kierunku, z którego przyszliście. Druga – możecie się rozkuć, wziąć karabin, wpakować mu kulkę w łeb, pochować obu i udać się w bardziej oświecone rejony. Wasz wybór. Na wypadek, gdyby astronomia byłaby obca – to jest Gwiazda Polarna.""";Nienawistna Ósemka;Kill Bill;Django;Rzeka tajemnic;Django
+245;Cytaty;"Z jakiego filmu pochodzi ten cytat?
+""Sorry Dolores, jestem zbyt młody i zbyt przystojny, żeby za to płacić.""";Poranek kojota;Miś;Seksmija;Kiler-ów 2-óch;Poranek kojota
+246;Sport;Kto jest rekordzistą w liczbie wygranych turniejów wielkoszlemowych (mężczyźni, stan na 2024)?;Roger Federer;Novak Djoković;Rafael Nadal;Pete Sampras;Novak Djoković
+247;Sport;Jaki dystans ma bieg maratoński?;40 km;42,195 km;45 km;50 km;42,195 km
+248;Sport;W którym roku odbyły się pierwsze nowożytne Igrzyska Olimpijskie?;1896;1900;1912;1924;1896
+249;Sport;Ile kół (pierścieni) znajduje się na fladze olimpijskiej?;4;5;6;7;5
+250;Sport;W jakiej dyscyplinie rywalizuje się o Puchar Stanleya?;Koszykówka;Hokej na lodzie;Baseball;Futbol amerykański;Hokej na lodzie
+251;Sport;Co oznacza skrót VAR w piłce nożnej?;Video Assistant Referee;Very Accurate Referee;Video Action Replay;Virtual Area Rule;Video Assistant Referee
+252;Sport;Ile bil jest na stole w snookerze na początku gry (łącznie)?;15;21;22;25;22
+253;Sport;Ile trwają tercje w hokeju na lodzie?;15 min;20 min;30 min;45 min;20 min
+254;Sport;Kto jest najmłodszym mistrzem świata w historii Formuły 1?;Lewis Hamilton;Sebastian Vettel;Max Verstappen;Michael Schumacher;Sebastian Vettel
+255;Sport;Iga Świątek wygrała swój pierwszy Wielki Szlem w:;Australii;USA;Francji (Roland Garros);Anglii (Wimbledon);Francji (Roland Garros)
+256;Sport;W jakim mieście znajduje się słynny tor wyścigowy Monza?;W Rzymie;W Mediolanie (okolicach);W Turynie;W Neapolu;W Mediolanie (okolicach)
+257;Sport;Ile graczy liczy drużyna piłki ręcznej na boisku?;5;6;7;8;7
+258;Sport;Co oznacza skrót MMA?;Mixed Martial Arts;Modern Martial Arts;Men's Martial Arts;Master Martial Arts;Mixed Martial Arts
+259;Sport;Kto był trenerem polskiej kadry siatkarzy, gdy zdobywali MŚ w 2014 i 2018?;Antiga / Heynen;Wagner / Lozano;Grbic / Castellani;Rezende;Antiga / Heynen
+260;Sport;Gdzie znajduje się siedziba FIFA?;Paryż;Londyn;Zurych;Nowy Jork;Zurych
+261;Sport;"Jaki dystans pokonują zawodnicy w biegu na ""jedno okrążenie"" (stadion)?";100 m;200 m;400 m;800 m;400 m
+262;Sport;"Ile wynosi ""oczko"" w grze w karty, ale też potoczna nazwa 21 w kasynie?";Poker;Makao;Blackjack;Brydż;Blackjack
+263;Sport;Jak nazywa się kij używany w golfie do uderzeń na greenie (do dołka)?;Driver;Iron;Wedge;Putter;Putter
+264;Sport;Jaka jest maksymalna liczba punktów w jednej rozgrywce w kręglach (bowling)?;200;300;400;500;300
+265;Sport;Jak nazywa się zawodnik, który dyktuje tempo w wioślarstwie (siedzi na rufie)?;Szlakowy;Sternik;Wioślarz;Kapitan;Sternik
+266;Sport;Ile trwa runda w boksie zawodowym?;2 minuty;3 minuty;4 minuty;5 minut;3 minuty
+267;Sport;Kto wygrał najwięcej wyścigów w historii F1 (stan na 2024)?;Michael Schumacher;Ayrton Senna;Lewis Hamilton;Alain Prost;Lewis Hamilton
+268;Sport;W jakim mieście odbywają się zawody skoków narciarskich w Nowy Rok?;Oberstdorf;Garmisch-Partenkirchen;Innsbruck;Bischofshofen;Garmisch-Partenkirchen
+269;Sport;Kto jest jedynym pośmiertnym mistrzem świata Formuły 1?;Ayrton Senna;Jochen Rindt;Gilles Villeneuve;Jim Clark;Jochen Rindt
+270;Sport;Która reprezentacja piłkarska jako jedyna zagrała we wszystkich finałach MŚ (do 2022)?;Niemcy;Argentyna;Brazylia;Włochy;Brazylia
+271;Sport;Ile razy Michael Schumacher zdobywał mistrzostwo świata F1?;5;6;7;8;7
+272;Sport;Jaką nazwę nosi stadion narodowy Brazylii (oficjalnie Estádio Jornalista Mário Filho)?;Morumbi;Maracan?;Mineir?o;Arena Corinthians;Maracan?
+273;Sport;Jaką długość ma basen olimpijski?;25 m;50 m;60 m;100 m;50 m
+274;Sport;Jak nazywa się styl skakania wzwyż, w którym zawodnik przeskakuje poprzeczkę plecami?;Styl nożycowy;Styl przerzutowy;Flop (Fosbury Flop);Styl naturalny;Flop (Fosbury Flop)
+275;Sport;Jaki jest jedyny turniej Wielkiego Szlema rozgrywany na kortach ziemnych?;Australian Open;Wimbledon;US Open;Roland Garros;Roland Garros
+276;Sport;Który polski klub piłkarski jako jedyny dotarł do finału europejskiego pucharu (Puchar Zdobywców Pucharów 1970)?;Legia Warszawa;Górnik Zabrze;Wisła Kraków;Widzew Łódź;Górnik Zabrze
+277;Sport;W jakiej konkurencji Robert Korzeniowski zdobył 4 złote medale olimpijskie?;Maraton;Chód sportowy;Bieg na 10 km;Triatlon;Chód sportowy
+278;Sport;Co oznacza skrót KO w boksie?;Knock Out;Kick Off;Keep On;Knock Off;Knock Out
+279;Sport;Ile wynosi dystans biegu z przeszkodami (standardowy olimpijski)?;1500 m;3000 m;5000 m;10000 m;3000 m
+280;Sport;Kto wygrał Turniej Czterech Skoczni wygrywając wszystkie 4 konkursy (jako pierwszy)?;Adam Małysz;Sven Hannawald;Kamil Stoch;Ryoyu Kobayashi;Sven Hannawald
+281;Sport;Jaki przydomek nosi reprezentacja Nowej Zelandii w rugby?;Wallabies;Springboks;All Blacks;Pumas;All Blacks
+282;Sport;Jaki numer nosił na koszulce Michael Jordan (najsłynniejszy)?;10;23;32;45;23
+283;Sport;Ile razy Adam Małysz zdobył Kryształową Kulę?;2;3;4;5;4
+284;Sport;Kto wygrał Ligę Mistrzów w 2005 roku po słynnym finale w Stambule (3:0 -> 3:3)?;AC Milan;Liverpool;FC Barcelona;Manchester United;Liverpool
+285;Sport;"Co oznacza skrót ""DSQ"" w wynikach zawodów?";Did Not Start;Disqualified;Did Not Finish;Distance Squared;Disqualified
+286;Sport;"Ile punktów warty jest ""Bullseye"" (czerwony środek) w darcie?";25;50;60;100;50
+287;Sport;W jakiej dyscyplinie sportu Polacy zdobyli złoto drużynowe w Lahti 2017?;Biegi narciarskie;Skoki narciarskie;Kombinacja norweska;Hokej;Skoki narciarskie
+288;Literatura;"Kto napisał epopeję narodową ""Pan Tadeusz""?";Juliusz Słowacki;Adam Mickiewicz;Henryk Sienkiewicz;Bolesław Prus;Adam Mickiewicz
+289;Literatura;Za jaką powieść Władysław Reymont otrzymał Nagrodę Nobla?;Ziemia obiecana;Chłopi;Komediantka;Rok 1794;Chłopi
+290;Literatura;"Jak nazywa się główny bohater ""Lalki"" Bolesława Prusa?";Ignacy Rzecki;Stanisław Wokulski;Tomasz Łęcki;Julian Ochocki;Stanisław Wokulski
+291;Literatura;Kto jest autorem trylogii fantasy o Wiedźminie?;Stanisław Lem;Andrzej Pilipiuk;Jacek Dukaj;Andrzej Sapkowski;Andrzej Sapkowski
+292;Literatura;Treny Jana Kochanowskiego zostały napisane po śmierci:;Jego żony;Jego córki Urszulki;Króla Zygmunta;Jego matki;Jego córki Urszulki
+293;Literatura;W którym roku Olga Tokarczuk otrzymała literacką Nagrodę Nobla?;2015;2018;2019;2020;2019
+294;Literatura;"Kto napisał ""Zbrodnię i karę""?";Lew Tołstoj;Fiodor Dostojewski;Anton Czechow;Mikołaj Gogol;Fiodor Dostojewski
+295;Literatura;"Jakie imię nosi główna bohaterka ""Moralności pani Dulskiej""?";Aniela;Hesia;Mela;Juliasiewiczowa;Aniela
+296;Literatura;"Kto jest autorem ""Wesela""?";Stefan Żeromski;Władysław Reymont;Stanisław Wyspiański;Kazimierz Przerwa-Tetmajer;Stanisław Wyspiański
+297;Literatura;Romeo i Julia to dzieło:;Moliera;Williama Szekspira;Dantego;Charlesa Dickensa;Williama Szekspira
+298;Literatura;"Kto napisał hymn ""Mazurek Dąbrowskiego""?";Józef Wybicki;Adam Mickiewicz;Juliusz Słowacki;Ignacy Krasicki;Józef Wybicki
+299;Literatura;"Kto jest autorem powieści ""Quo Vadis""?";Bolesław Prus;Henryk Sienkiewicz;Stefan Żeromski;Eliza Orzeszkowa;Henryk Sienkiewicz
+300;Literatura;"Jak nazywa się narrator w ""Lalce"" (Pamiętnik starego subiekta)?";Stanisław Wokulski;Ignacy Rzecki;Geist;Szuman;Ignacy Rzecki
+301;Literatura;"Kto napisał ""Małego Księcia""?";Victor Hugo;Antoine de Saint-Exupéry;Albert Camus;Juliusz Verne;Antoine de Saint-Exupéry
+302;Literatura;"Jakie nazwisko nosi główny bohater ""Ferdydurke""?";Cezary Baryka;Józio Kowalski;Zenon Ziembiewicz;Artur;Józio Kowalski
+303;Literatura;"Kto napisał ""Folwark zwierzęcy""?";Aldous Huxley;George Orwell;Ray Bradbury;J.R.R. Tolkien;George Orwell
+304;Literatura;Wisława Szymborska otrzymała Nagrodę Nobla w roku:;1980;1996;2000;2005;1996
+305;Literatura;"Kto jest autorem cyklu ""Kroniki Narnii""?";J.R.R. Tolkien;C.S. Lewis;J.K. Rowling;Philip Pullman;C.S. Lewis
+306;Literatura;Balladyna to dramat autorstwa:;Adama Mickiewicza;Zygmunta Krasińskiego;Juliusza Słowackiego;Cypriana Norwida;Juliusza Słowackiego
+307;Literatura;"Jak nazywa się smok w ""Hobbicie""?";Smaug;Glaurung;Ancalagon;Drogon;Smaug
+308;Literatura;Jak brzmi prawdziwe nazwisko Bolesława Prusa?;Aleksander Głowacki;Henryk Sienkiewicz;Stefan Żeromski;Teodor Parnicki;Aleksander Głowacki
+309;Literatura;"Kto napisał ""Zemstę""?";Adam Mickiewicz;Aleksander Fredro;Juliusz Słowacki;Stanisław Wyspiański;Aleksander Fredro
+310;Literatura;"Kto jest autorem ""Sklepów cynamonowych""?";Witold Gombrowicz;Bruno Schulz;Stanisław Ignacy Witkiewicz;Julian Tuwim;Bruno Schulz
+311;Literatura;Kamienie na szaniec Aleksandra Kamińskiego opowiadają o:;Wojnie obronnej 1939;Szarych Szeregach;Powstaniu Styczniowym;Legionach Piłsudskiego;Szarych Szeregach
+312;Literatura;"Kto napisał ""Solaris""?";Stanisław Lem;Janusz A. Zajdel;Jacek Dukaj;Philip K. Dick;Stanisław Lem
+313;Literatura;"Kto jest autorem ""Krzyżaków""?";Józef Ignacy Kraszewski;Henryk Sienkiewicz;Adam Mickiewicz;Stefan Żeromski;Henryk Sienkiewicz
+314;Literatura;"W jakiej epoce powstał ""Bogurodzica""?";Średniowiecze;Renesans;Barok;Oświecenie;Średniowiecze
+315;Literatura;"Kto napisał ""Nad Niemnem""?";Maria Konopnicka;Eliza Orzeszkowa;Zofia Nałkowska;Bolesław Prus;Eliza Orzeszkowa
+316;Literatura;Kto jest twórcą postaci Sherlocka Holmesa?;Agatha Christie;Arthur Conan Doyle;Edgar Allan Poe;G.K. Chesterton;Arthur Conan Doyle
+317;Literatura;"Jak brzmi nazwisko rodowe Tadeusza z ""Pana Tadeusza""?";Horeszko;Soplica;Dobrzyński;Jasiński;Soplica
+318;Literatura;"W jakim mieście toczy się akcja ""Zbrodni i kary""?";W Moskwie;W Petersburgu;W Kijowie;W Odessie;W Petersburgu
+319;Literatura;Jaką nazwę nosi grupa poetycka, do której należał Julian Tuwim?;Skamander;Żagary;Awangarda Krakowska;Kwadryga;Skamander
+320;Literatura;"Kto napisał ""Dziady""?";Juliusz Słowacki;Adam Mickiewicz;Zygmunt Krasiński;Cyprian Norwid;Adam Mickiewicz
+321;Literatura;"Kto napisał ""Jądro ciemności""?";Joseph Conrad;Rudyard Kipling;Ernest Hemingway;Mark Twain;Joseph Conrad
+322;Literatura;Kordian to dramat:;Adama Mickiewicza;Juliusza Słowackiego;Zygmunta Krasińskiego;Stanisława Wyspiańskiego;Juliusza Słowackiego
+323;Literatura;"Kto jest autorem wiersza ""Lokomotywa""?";Jan Brzechwa;Julian Tuwim;Aleksander Fredro;Maria Konopnicka;Julian Tuwim
+324;Literatura;"Kto jest autorem ""Pana Wołodyjowskiego""?";Henryk Sienkiewicz;Józef Ignacy Kraszewski;Adam Mickiewicz;Bolesław Prus;Henryk Sienkiewicz
+325;Literatura;"Kto napisał ""Syzyfowe prace""?";Henryk Sienkiewicz;Stefan Żeromski;Bolesław Prus;Władysław Reymont;Stefan Żeromski
+326;Literatura;"Kto jest autorem ""Władcy Pierścieni""?";George R.R. Martin;J.R.R. Tolkien;Ursula Le Guin;Frank Herbert;J.R.R. Tolkien
+327;Literatura;"Rota (""Nie rzucim ziemi..."") to utwór:";Marii Konopnickiej;Adama Mickiewicza;Juliusza Słowackiego;Cypriana Norwida;Marii Konopnickiej
+328;Literatura;"Kto napisał ""Cierpienia młodego Wertera""?";Friedrich Schiller;Johann Wolfgang Goethe;Thomas Mann;Heinrich Heine;Johann Wolfgang Goethe
+329;Literatura;W pustyni i w puszczy to powieść dla młodzieży:;Bolesława Prusa;Henryka Sienkiewicza;Kornela Makuszyńskiego;Adama Bahdaja;Henryka Sienkiewicza
+330;Literatura;"Kto napisał ""Starego człowieka i morze""?";John Steinbeck;Ernest Hemingway;William Faulkner;F. Scott Fitzgerald;Ernest Hemingway
+331;Literatura;"Kto jest autorem ""Faraona""?";Henryk Sienkiewicz;Bolesław Prus;Teodor Parnicki;Jarosław Iwaszkiewicz;Bolesław Prus
+332;Literatura;Jak nazywa się epoka literacka po Romantyzmie w Polsce?;Młoda Polska;Pozytywizm;Oświecenie;Dwudziestolecie;Pozytywizm
+333;Literatura;"Jak nazywa się główny bohater ""Potopu""?";Jan Skrzetuski;Andrzej Kmicic;Michał Wołodyjowski;Onufry Zagłoba;Andrzej Kmicic
+334;Literatura;"Jaką formę literacką mają ""Treny""?";Powieść;Cykl wierszy żałobnych;Dramat;Epos;Cykl wierszy żałobnych
+335;Marvel;Jak nazywa się materiał, z którego wykonana jest tarcza Kapitana Ameryki?;Adamantium;Vibranium;Carbonadium;Uru;Vibranium
+336;Marvel;"W którym roku miała miejsce premiera pierwszego ""Iron Mana""?";2006;2007;2008;2010;2008
+337;Marvel;"Jak nazywa się planeta, na której zdobywa się Kamień Duszy (w ""Endgame"" i ""Infinity War"")?";Vormir;Titan;Xandar;Morag;Vormir
+338;Marvel;Kto stworzył Ultrona w filmowym uniwersum (MCU)?;Hank Pym;Tony Stark i Bruce Banner;Reed Richards;Shuri;Tony Stark i Bruce Banner
+339;Marvel;Jak brzmi prawdziwe imię Czarnej Pantery?;M'Baku;N'Jobu;T'Chaka;T'Challa;T'Challa
+340;Marvel;Ile jest Kamieni Nieskończoności?;5;6;7;8;6
+341;Marvel;Jak nazywa się siostra Thora (w MCU)?;Angela;Amora;Hela;Sif;Hela
+342;Marvel;Kto zabił rodziców Tony'ego Starka?;Red Skull;Ivan Vanko;Zimowy Żołnierz;Loki;Zimowy Żołnierz
+343;Marvel;Jak nazywa się sztuczna inteligencja, która zastąpiła JARVIS-a w zbroi Tony'ego?;KAREN;EDITH;FRIDAY;VERONICA;FRIDAY
+344;Marvel;Jak nazywa się ojciec Petera Quilla (Star-Lorda) w filmie?;J'son;Yondu;Ego;Thanos;Ego
+345;Marvel;"W jakiej miejscowości Wanda Maximoff stworzyła swoją ""rzeczywistość"" (Hex)?";Eastview;Westview;Northview;Southview;Westview
+346;Marvel;Jak nazywa się młot Thora?;Stormbreaker;Mjolnir;Gungnir;Hofund;Mjolnir
+347;Marvel;Jak nazywa się demon, który włada wymiarem Dark Dimension?;Mephisto;Dormammu;Nightmare;Shuma-Gorath;Dormammu
+348;Marvel;Z jakiego metalu są szpony Wolverine'a?;Vibranium;Adamantium;Uru;Tytan;Adamantium
+349;Marvel;Jak nazywa się olbrzymi wilk, wierzchowiec Heli?;Fenris;Skurge;Surtur;Garm;Fenris
+350;Marvel;"Jak nazywa się rasa, która zmienia kształty (pojawia się w ""Kapitan Marvel"")?";Kree;Skrulle;Chitauri;Flerken;Skrulle
+351;Marvel;Jaki kolor ma Kamień Czasu?;Niebieski;Czerwony;Zielony;Pomarańczowy;Zielony
+352;Marvel;Kto jest autorem komiksów, który pojawiał się w cameo w prawie każdym filmie Marvela do 2019?;Jack Kirby;Steve Ditko;Stan Lee;Kevin Feige;Stan Lee
+353;Marvel;Jak brzmi prawdziwe nazwisko Scarlet Witch?;Natasha Romanoff;Wanda Maximoff;Jean Grey;Carol Danvers;Wanda Maximoff
+354;Marvel;W którym filmie Spider-Man zadebiutował w MCU?;Spider-Man: Homecoming;Avengers: Czas Ultrona;Kapitan Ameryka: Wojna Bohaterów;Iron Man 2;Kapitan Ameryka: Wojna Bohaterów
+355;Marvel;Jak nazywa się asgardzki strażnik Bifrostu (przed Skurge'em)?;Heimdall;Volstagg;Fandral;Hogun;Heimdall
+356;Marvel;Kto jest twórcą symbiontów (w tym Venoma) w komiksach?;Knull;Carnage;Riot;Galactus;Knull
+357;Marvel;"Kto zabił Quicksilvera w ""Czasie Ultrona""?";Ultron (strzelając z Quinjeta);Hulk;Scarlet Witch;Iron Man;Ultron (strzelając z Quinjeta)
+358;Marvel;Jak nazywa się alter ego Bucky'ego Barnesa?;Zimowy Żołnierz;Falcon;Patriot;US Agent;Zimowy Żołnierz
+359;Marvel;Jak nazywa się organizacja terrorystyczna porywająca Tony'ego Starka w pierwszym filmie?;Hydra;Dziesięć Pierścieni;A.I.M.;Serpent Society;Dziesięć Pierścieni
+360;Marvel;"Kto uratował Tony'ego Starka i Nebulę z kosmosu w ""Endgame""?";Thor;Rocket;Kapitan Marvel;Kraglin;Kapitan Marvel
+361;Marvel;Kto jest miłością życia Steve'a Rogersa?;Sharon Carter;Peggy Carter;Natasha Romanoff;Maria Hill;Peggy Carter
+362;Marvel;"Jak nazywa się planeta zniszczona przez Surtura w ""Ragnarok""?";Asgard;Vanaheim;Midgard;Jotunheim;Asgard
+363;Marvel;Jak nazywa się broń używana przez Yondę (sterowana gwizdaniem)?;Strzała Yaka;Bumerang;Gwiazdka;Dagger;Strzała Yaka
+364;Star Wars;Jak nazywa się rodzinna planeta Anakina Skywalkera?;Naboo;Coruscant;Tatooine;Jakku;Tatooine
+365;Star Wars;Kto był mistrzem Qui-Gon Jinna?;Yoda;Hrabia Dooku;Mace Windu;Obi-Wan Kenobi;Hrabia Dooku
+366;Star Wars;Jaki kolor miecza świetlnego posiadał Mace Windu?;Niebieski;Zielony;Czerwony;Fioletowy;Fioletowy
+367;Star Wars;"W którym roku odbyła się premiera ""Nowej Nadziei"" (Epizod IV)?";1975;1977;1980;1983;1977
+368;Star Wars;Jak nazywa się rasa, do której należy Chewbacca?;Ewok;Jawa;Wookiee;Rodianin;Wookiee
+369;Star Wars;Kto wydał Rozkaz 66?;Darth Vader;Wilhuff Tarkin;Imperator Palpatine;Hrabia Dooku;Imperator Palpatine
+370;Star Wars;Jak nazywał się statek Boby Fetta (przed zmianą nazwy w kanonie)?;Slave I;Millennium Falcon;Ghost;Razor Crest;Slave I
+371;Star Wars;"Na jakiej planecie odbyła się bitwa z maszynami kroczącymi AT-AT w ""Imperium Kontratakuje""?";Endor;Hoth;Dagobah;Bespin;Hoth
+372;Star Wars;Kto zabił Jabbę the Hutt?;Han Solo;Luke Skywalker;Leia Organa;Boba Fett;Leia Organa
+373;Star Wars;Jaki numer nosił szturmowiec, którym był Finn?;FN-2187;TK-421;CT-7567;RX-24;FN-2187
+374;Star Wars;Jak nazywa się planeta, na której produkowano klony?;Geonosis;Kamino;Mustafar;Utapau;Kamino
+375;Star Wars;Kto jest twórcą C-3PO?;Anakin Skywalker;Padmé Amidala;Owen Lars;Bail Organa;Anakin Skywalker
+376;Star Wars;Jak nazywa się przybrana matka księżniczki Lei?;Shmi Skywalker;Breha Organa;Mon Mothma;Beru Lars;Breha Organa
+377;Star Wars;Z jakiego materiału wykonana jest zbroja Mandalorianina (Dina Djarina)?;Durastal;Beskar;Cortosis;Phrik;Beskar
+378;Star Wars;"Kto dowodził Gwiazdą Śmierci w ""Nowej Nadziei""?";Darth Vader;Wielki Moff Tarkin;Admirał Piett;Generał Veers;Wielki Moff Tarkin
+379;Star Wars;Jak nazywa się rasa małych zbieraczy złomu z Tatooine?;Tuskeni;Jawowie;Gamorreanie;Toydarianie;Jawowie
+380;Star Wars;Kto odciął rękę Mace'owi Windu?;Palpatine;Darth Maul;Hrabia Dooku;Anakin Skywalker;Anakin Skywalker
+381;Star Wars;Jaki tytuł nosił Palpatine zanim został Imperatorem?;Senator;Generał;Kanclerz;Gubernator;Kanclerz
+382;Star Wars;Jak nazywa się droid astromechaniczny Poe Damerona?;R2-D2;BB-8;C-3PO;K-2SO;BB-8
+383;Star Wars;Kto zabił Hana Solo?;Snoke;Kylo Ren;Generał Hux;Kapitan Phasma;Kylo Ren
+384;Star Wars;Kto był pierwotnym właścicielem Sokoła Millennium przed Hanem?;Lando Calrissian;Chewbacca;Jabba the Hutt;Maz Kanata;Lando Calrissian
+385;Star Wars;Kto szkolił Luke'a Skywalkera na Dagobah?;Obi-Wan Kenobi;Qui-Gon Jinn;Yoda;Maz Kanata;Yoda
+386;Star Wars;Jak nazywa się ojciec Boby Fetta?;Jango Fett;Cody;Rex;Pre Vizsla;Jango Fett
+387;Star Wars;Kto był dowódcą Separatystów (cyborgiem)?;Hrabia Dooku;Darth Maul;Generał Grievous;Asajj Ventress;Generał Grievous
+388;Star Wars;Jakie imię przyjął Obi-Wan podczas wygnania na Tatooine?;Ben;Owen;Luke;Bail;Ben
+389;Star Wars;Kto grał rolę Luke'a Skywalkera?;Harrison Ford;Mark Hamill;Ewan McGregor;Hayden Christensen;Mark Hamill
+390;Star Wars;Jak nazywa się pustynne zwierzę, na którym jeżdżą Tuskeni?;Bantha;Dewback;Ronto;Eopie;Bantha
+391;Star Wars;"Kto powiedział: ""To pułapka!"" (It's a trap!)?";Admirał Ackbar;Generał Madine;Mon Mothma;Lando Calrissian;Admirał Ackbar
+392;Star Wars;"Jak nazywa się kasyno w ""Ostatnim Jedi""?";Canto Bight;Mos Eisley;Maz's Castle;Cloud City;Canto Bight
+393;Star Wars;Kto zamroził Hana Solo w karbonicie?;Jabba the Hutt;Boba Fett;Darth Vader;Lando Calrissian;Darth Vader
+394;Star Wars;Kto dowodził oddziałem klonów 501?;Kapitan Rex;Komandor Cody;Echo;Fives;Kapitan Rex
+395;Star Wars;Jak nazywa się planeta-miasto?;Naboo;Alderaan;Coruscant;Corellia;Coruscant
+396;Star Wars;Kto zabił Snoke'a?;Luke Skywalker;Rey;Kylo Ren;Generał Hux;Kylo Ren
+397;Star Wars;Kto jest dziadkiem Kylo Rena?;Han Solo;Obi-Wan Kenobi;Anakin Skywalker;Palpatine;Anakin Skywalker
+398;Star Wars;Jak nazywa się włochata rasa z księżyca Endor?;Wookiee;Ewoki;Jawowie;Gunganie;Ewoki
+399;Star Wars;Kto był mistrzem Palpatine'a?;Darth Bane;Darth Plagueis;Darth Revan;Darth Malak;Darth Plagueis
+400;Star Wars;Jak nazywa się planeta, na której Obi-Wan walczył z Anakinem?;Geonosis;Tatooine;Mustafar;Hoth;Mustafar
+401;Star Wars;Kto adoptował Leię?;Bail Organa;Mon Mothma;Wilhuff Tarkin;Owen Lars;Bail Organa
+402;Star Wars;"Kto był Wielkim Admirałem Imperium w serialu ""Rebelianci""?";Thrawn;Tarkin;Pryce;Gideon;Thrawn
+403;Star Wars;Kto zabił Qui-Gon Jinna?;Hrabia Dooku;Darth Vader;Darth Maul;Generał Grievous;Darth Maul
+404;Star Wars;Jak nazywa się ojciec Jyn Erso?;Galen Erso;Saw Gerrera;Cassian Andor;Bodhi Rook;Galen Erso
+405;Star Wars;"Jak nazywa się droid z ""Łotra 1""?";C-3PO;K-2SO;IG-88;L3-37;K-2SO
+406;Star Wars;"Kto był królową Naboo w ""Mrocznym Widmie""?";Leia;Padmé Amidala;Jamillia;Apailana;Padmé Amidala
+407;Star Wars;Gdzie Luke Skywalker stracił rękę?;Na Hoth;Na Bespin;Na Endorze;Na Dagobah;Na Bespin
+408;Star Wars;Jak nazywa się rasa Jar Jar Binksa?;Gungan;Ewok;Jawa;Mon Calamari;Gungan
+409;Star Wars;"Kto był mistrzem Obi-Wana w ""Mrocznym Widmie""?";Yoda;Mace Windu;Qui-Gon Jinn;Hrabia Dooku;Qui-Gon Jinn
+410;Star Wars;Jak nazywa się pustynna planeta, na której Rey zbierała złom?;Tatooine;Jakku;Geonosis;Savareen;Jakku
+411;Star Wars;"Kto jest autorem muzyki do ""Gwiezdnych Wojen""?";Hans Zimmer;John Williams;Howard Shore;Michael Giacchino;John Williams
+412;Star Wars;Jak nazywa się kryształ zasilający miecz świetlny?;Beskar;Kyber;Coaxium;Doonium;Kyber
+413;Star Wars;"Kto powiedział ""Hello there"" (Witajcie) w ""Zemście Sithów""?";Anakin Skywalker;Generał Grievous;Obi-Wan Kenobi;Palpatine;Obi-Wan Kenobi
+414;Star Wars;Jakie jest nazwisko rodowe Kylo Rena?;Skywalker;Organa;Solo;Palpatine;Solo
+415;Harry Potter;Jaki rdzeń miała różdżka Harry'ego Pottera?;Włos z ogona jednorożca;Włókno ze smoczego serca;Pióro feniksa;Włos z głowy wili;Pióro feniksa
+416;Harry Potter;Jak nazywała się wioska, w której mieszkali Potterowie?;Little Hangleton;Budleigh Babberton;Dolina Godryka;Ottery St. Catchpole;Dolina Godryka
+417;Harry Potter;Kto podarował Harry'emu Błyskawicę (miotłę)?;Albus Dumbledore;Minerwa McGonagall;Syriusz Black;Remus Lupin;Syriusz Black
+418;Harry Potter;Jakie jest drugie imię Harry'ego Pottera?;James;Albus;Syriusz;Artur;James
+419;Harry Potter;Jak nazywa się kotka Argusa Filcha?;Pani Norris;Krzywołap;McGonagall;Norris;Pani Norris
+420;Harry Potter;Jaki patronus należał do Severusa Snape'a?;Łania;Jeleń;Wydra;Pies;Łania
+421;Harry Potter;Co trzeba powiedzieć, aby zamknąć Mapę Huncwotów?;Koniec psot;Mapa nieaktywna;Zamykam cię;Ukryj się;Koniec psot
+422;Harry Potter;Kto był mistrzem eliksirów przed Snapem i po nim (ta sama osoba)?;Horacy Slughorn;Gilderoy Lockhart;Albus Dumbledore;Filius Flitwick;Horacy Slughorn
+423;Harry Potter;Kto zabił Bellatriks Lestrange?;Ginny Weasley;Harry Potter;Molly Weasley;Hermiona Granger;Molly Weasley
+424;Harry Potter;Jakie zwierzę było symbolem domu Ravenclaw (w herbie książkowym)?;Kruk;Orzeł;Borsuk;Wąż;Orzeł
+425;Harry Potter;"Kto był dziewczyną Rona w ""Księciu Półkrwi""?";Hermiona Granger;Lavender Brown;Padma Patil;Pansy Parkinson;Lavender Brown
+426;Harry Potter;Jak nazywa się zaklęcie otwierające zamki?;Accio;Lumos;Alohomora;Colloportus;Alohomora
+427;Harry Potter;Jaki kolor mają iskry z różdżki przy zaklęciu Expelliarmus?;Zielony;Czerwony;Niebieski;Biały;Czerwony
+428;Harry Potter;"Kto podszył się pod Szalonookiego Moody'ego w ""Czarze Ognia""?";Peter Pettigrew;Barty Crouch Senior;Barty Crouch Junior;Lucjusz Malfoy;Barty Crouch Junior
+429;Harry Potter;Kto był kapitanem drużyny Quidditcha Gryffindoru w 1. roku Harry'ego?;Oliver Wood;Angelina Johnson;Charlie Weasley;Harry Potter;Oliver Wood
+430;Harry Potter;Jak nazywa się ulica handlowa czarodziejów w Londynie?;Ulica Pokątna;Ulica Śmiertelnego Nokturnu;Privet Drive;Grimmauld Place;Ulica Pokątna
+431;Harry Potter;Z czego składa się eliksir wielosokowy (jeden ze składników)?;Skóra wężslizga;Muchy siatkoskrzydłe;Krew smoka;Włos jednorożca;Muchy siatkoskrzydłe
+432;Harry Potter;Kto uratował Harry'ego przed dementorami w 5. części (w tunelu)?;Harry Potter;Dumbledore;Pani Figg (była świadkiem);Remus Lupin;Harry Potter
+433;Harry Potter;Jak nazywa się brat Dumbledore'a?;Aberforth;Ariana;Percival;Gellert;Aberforth
+434;Harry Potter;Jak nazywa się najsłynniejszy sklep ze słodyczami w Hogsmeade?;Zoonko;Miodowe Królestwo;Trzy Miotły;Pod Świńskim Łbem;Miodowe Królestwo
+435;Harry Potter;Kto zabił Syriusza Blacka?;Voldemort;Bellatriks Lestrange;Lucjusz Malfoy;Severus Snape;Bellatriks Lestrange
+436;Harry Potter;Jaki przedmiot uczyła profesor Trelawney?;Transmutacja;Wróżbiarstwo;Mugoloznawstwo;Astronomia;Wróżbiarstwo
+437;Harry Potter;Ile lat miał Harry, gdy dowiedział się, że jest czarodziejem?;10;11;12;13;11
+438;Harry Potter;Jakie imię nosi skrzat domowy rodziny Blacków?;Zgredek;Stworek;Mrużka;Hokey;Stworek
+439;Harry Potter;Co Harry musiał odzyskać od Slughorna w 6. części?;Eliksir Szczęścia;Wspomnienie o horkruksach;Różdżkę;Książkę do eliksirów;Wspomnienie o horkruksach
+440;Harry Potter;Kto został dyrektorem Hogwartu po śmierci Dumbledore'a?;Minerwa McGonagall;Severus Snape;Dolores Umbridge;Alecto Carrow;Severus Snape
+441;Harry Potter;Jaki jest numer skrytki, w której był Kamień Filozoficzny?;713;687;394;999;713
+442;Harry Potter;Kto uczył latania na miotłach w 1. klasie?;Pani Hooch;Prof. McGonagall;Oliver Wood;Hagrid;Pani Hooch
+443;Harry Potter;Jak nazywa się roślina, której krzyk może zabić?;Mandragora;Diabelskie Sidła;Wytrzeszcz;Czyrakobulwa;Mandragora
+444;Harry Potter;Jak nazywa się zaklęcie, które przywołuje przedmioty?;Accio;Depulso;Wingardium Leviosa;Locomotor;Accio
+445;Harry Potter;Jak nazywa się ulubiony dżem Dumbledore'a?;Truskawkowy;Malinowy;Agrestowy;Morelowy;Malinowy
+446;Harry Potter;Jak nazywa się sowa Rona (mała)?;Hermes;Errol;Świstoświnka;Hedwiga;Świstoświnka
+447;Harry Potter;Co robi zaklęcie Riddikulus?;Zabija pająki;Zmienia bogina w coś śmiesznego;Otwiera drzwi;Leczy rany;Zmienia bogina w coś śmiesznego
+448;Harry Potter;Jaki przedmiot jest horkruksem, który Harry znalazł w Pokoju Życzeń?;Diadem Roweny Ravenclaw;Puchar Hufflepuff;Medalion Slytherina;Pierścień Gaunta;Diadem Roweny Ravenclaw
+449;Harry Potter;Jak nazywa się zaklęcie torturujące?;Imperio;Avada Kedavra;Crucio;Sectumsempra;Crucio
+450;Harry Potter;Jak nazywa się najwyższa wieża w Hogwarcie?;Wieża Astronomiczna;Wieża Gryffindoru;Wieża Zegarowa;Wieża Północna;Wieża Astronomiczna
+451;Harry Potter;Kto dał Harry'emu Pelerynę Niewidkę?;Albus Dumbledore;Syriusz Black;Hagrid;McGonagall;Albus Dumbledore
+452;Harry Potter;Jak nazywa się trzecie Insygnium Śmierci (oprócz Różdżki i Kamienia)?;Peleryna Niewidka;Miecz Gryffindora;Tiara Przydziału;Zmieniacz Czasu;Peleryna Niewidka
+453;Harry Potter;Kto był bratem Syriusza Blacka?;Regulus Arcturus Black;Orion Black;Cygnus Black;Bellatrix Black;Regulus Arcturus Black
+454;Harry Potter;Jak nazywa się najstarszy brat Rona?;Bill;Charlie;Percy;Fred;Bill
+455;Harry Potter;Jak nazywa się pub, który jest wejściem na ulicę Pokątną?;Dziurawy Kocioł;Trzy Miotły;Pod Świńskim Łbem;Miodowe Królestwo;Dziurawy Kocioł
+456;Harry Potter;Kto był dziewczyną Harry'ego w 5. części?;Cho Chang;Ginny Weasley;Hermiona Granger;Luna Lovegood;Cho Chang
+457;Harry Potter;Jak nazywa się zaklęcie, które gasi światło różdżki?;Nox;Lumos;Accio;Reparo;Nox
+458;Harry Potter;Kto zniszczył Nagini?;Neville Longbottom;Harry Potter;Ron Weasley;Hermiona Granger;Neville Longbottom
+459;Harry Potter;Jak nazywa się pająk Hagrida?;Aragog;Mosag;Szeloba;Norbert;Aragog
+460;Historia Świata;Podaj date rozpoczęcia się wojny na Ukrainie?;24 lutego 2022 roku;14 lutego 2021 roku;24 lutego 2021 roku;14 lutego 2022 roku;24 lutego 2022 roku
+461;Historia Świata;Kto był pierwszym cesarzem Rzymu?;Juliusz Cezar;Neron;Oktawian August;Tyberiusz;Oktawian August
+462;Historia Świata;Które wydarzenie bezpośrednio wywołało I wojnę światową?;Wojny bałkańskie;Zamach w Sarajewie;Kryzys marokański;Rewolucja w Rosji;Zamach w Sarajewie
+463;Historia Świata;Kto był twórcą pierwszego spisanego kodeksu praw?;Hammurabi;Nabuchodonozor;Sargon Wielki;Ramzes II;Hammurabi
+464;Historia Świata;W którym roku upadło Cesarstwo Zachodniorzymskie?;476 n.e.;395 n.e.;1453 n.e.;1054 n.e.;476 n.e.
+465;Historia Świata;Kto wynalazł ruchomą czcionkę w Europie?;Leonardo da Vinci;Jan Gutenberg;Mikołaj Kopernik;Galileusz;Jan Gutenberg
+466;Historia Świata;Bitwa pod Grunwaldem odbyła się w roku:;1410;1385;1525;1683;1410
+467;Historia Świata;Rewolucja Francuska wybuchła w roku:;1776;1789;1815;1848;1789
+468;Historia Świata;Kto był pierwszym prezydentem USA?;Thomas Jefferson;Benjamin Franklin;George Washington;Abraham Lincoln;George Washington
+469;Historia Świata;W którym roku zakończyła się II wojna światowa w Europie?;1944;1945;1939;1950;1945
+470;Historia Świata;Jak nazywał się przywódca powstania niewolników w starożytnym Rzymie?;Hannibal;Spartakus;Brutus;Cezar;Spartakus
+471;Historia Świata;Bitwa pod Waterloo (ostateczna klęska Napoleona) miała miejsce w:;1805;1812;1815;1830;1815
+472;Historia Świata;Cywilizacja Majów rozwijała się głównie na terenie obecnego:;Peru;Meksyku;Brazylii;Chile;Meksyku
+473;Historia Świata;Wojna secesyjna w USA toczyła się w latach:;1861-1865;1775-1783;1914-1918;1812-1815;1861-1865
+474;Historia Świata;Kto odkrył morską drogę do Indii?;Krzysztof Kolumb;Ferdynand Magellan;Vasco da Gama;Amerigo Vespucci;Vasco da Gama
+475;Historia Świata;Jak nazywała się stolica Imperium Azteków?;Cuzco;Tenochtitlán;Machu Picchu;Chichén Itzá;Tenochtitlán
+476;Historia Świata;Traktat wersalski kończący I wojnę światową podpisano w roku:;1917;1918;1919;1920;1919
+477;Historia Świata;Kto był pierwszym carem Rosji?;Piotr Wielki;Iwan IV Groźny;Mikołaj II;Katarzyna Wielka;Iwan IV Groźny
+478;Historia Świata;Jak nazywa się okres odrodzenia kultury antycznej w Europie?;Barok;Oświecenie;Renesans;Romantyzm;Renesans
+479;Historia Świata;Kto dowodził wojskami kartagińskimi w II wojnie punickiej?;Scypion Afrykański;Hannibal;Pyrrus;Hamilkar;Hannibal
+480;Historia Świata;Rewolucja Październikowa w Rosji miała miejsce w roku:;1905;1917;1922;1939;1917
+481;Historia Świata;Kto był pierwszym cesarzem rzymskim?;Juliusz Cezar;Oktawian August;Neron;Marek Aureliusz;Oktawian August
+482;Historia Świata;Jak nazywał się statek, którym pielgrzymi przypłynęli do Ameryki w 1620 r.?;Santa Maria;Mayflower;Victoria;Beagle;Mayflower
+483;Historia Świata;Mur Berliński upadł w roku:;1980;1989;1991;1975;1989
+484;Historia Świata;Wojna stuletnia toczyła się między:;Anglią a Francją;Hiszpanią a Portugalią;Polską a Zakonem;Rzymem a Kartaginą;Anglią a Francją
+485;Historia Świata;Jak nazywała się żona Ludwika XVI, ścięta podczas rewolucji?;Katarzyna Medycejska;Maria Antonina;Maria Teresa;Elżbieta I;Maria Antonina
+486;Historia Świata;"Kto namalował ""Mona Lisę""?";Michał Anioł;Rafael Santi;Leonardo da Vinci;Sandro Botticelli;Leonardo da Vinci
+487;Historia Świata;W którym roku człowiek po raz pierwszy stanął na Księżycu?;1961;1969;1957;1975;1969
+488;Historia Świata;Jak nazywała się bomba zrzucona na Hiroszimę?;Fat Man;Little Boy;Tsar Bomba;Trinity;Little Boy
+489;Historia Świata;"Kto był autorem ""Komunistycznego Manifestu""?";Włodzimierz Lenin;Józef Stalin;Karol Marks i F. Engels;Lew Trocki;Karol Marks i F. Engels
+490;Historia Świata;Kto był twórcą potęgi imperium mongolskiego?;Kubilaj-chan;Czyngis-chan;Tamerlan;Batu-chan;Czyngis-chan
+491;Historia Świata;Kto był pierwszą kobietą, która otrzymała Nagrodę Nobla?;Maria Skłodowska-Curie;Matka Teresa;Selma Lagerlöf;Bertha von Suttner;Maria Skłodowska-Curie
+492;Historia Świata;Czarna Śmierć (dżuma) spustoszyła Europę w wieku:;XII;XIV;XVI;XVIII;XIV
+493;Historia Świata;Kto był przywódcą ZSRR podczas II wojny światowej?;Włodzimierz Lenin;Józef Stalin;Nikita Chruszczow;Michaił Gorbaczow;Józef Stalin
+494;Historia Świata;W którym roku podpisano Deklarację Niepodległości USA?;1776;1789;1800;1750;1776
+495;Historia Świata;Nelson Mandela był prezydentem:;Kenii;Nigerii;RPA;Egiptu;RPA
+496;Historia Świata;Kto wynalazł żarówkę (przypisywane komercyjne wdrożenie)?;Nikola Tesla;Thomas Edison;Alexander Bell;Samuel Morse;Thomas Edison
+497;Historia Świata;Kto był autorem teorii ewolucji?;Isaac Newton;Karol Darwin;Albert Einstein;Ludwik Pasteur;Karol Darwin
+498;Historia Świata;Kiedy wybuchła I wojna światowa?;1912;1914;1918;1939;1914
+499;Historia Świata;Jak nazywał się legendarny założyciel Rzymu?;Remus;Romulus;Eneasz;Cezar;Romulus
+500;Historia Świata;Kto był przywódcą Rewolucji Kubańskiej?;Che Guevara;Fidel Castro;Fulgencio Batista;Hugo Chavez;Fidel Castro
+501;Historia Świata;Kto był pierwszym człowiekiem w kosmosie?;Neil Armstrong;Jurij Gagarin;John Glenn;Buzz Aldrin;Jurij Gagarin
+502;Historia Świata;W którym roku upadł Konstantynopol (Koniec Bizancjum)?;1096;1204;1453;1529;1453
+503;Historia Świata;Jak nazywała się żelazna dama brytyjskiej polityki?;Królowa Wiktoria;Elżbieta II;Margaret Thatcher;Theresa May;Margaret Thatcher
+504;Historia Świata;Kto dowodził wojskami polskimi pod Wiedniem w 1683?;Stefan Batory;Jan III Sobieski;Władysław IV;Józef Piłsudski;Jan III Sobieski
+505;Historia Świata;Jak nazywa się święta księga islamu?;Tora;Biblia;Koran;Wedy;Koran
+506;Historia Świata;Jak nazywała się operacja inwazji Niemiec na ZSRR?;Operacja Lew Morski;Operacja Barbarossa;Operacja Overlord;Operacja Market Garden;Operacja Barbarossa
+507;Historia Świata;W którym roku powstało NATO?;1945;1949;1955;1960;1949
+508;Historia Świata;"Kto był autorem ""Boskiej Komedii""?";Petrarka;Boccaccio;Dante Alighieri;Machiavelli;Dante Alighieri
+509;Historia Świata;Jak nazywał się słynny szlak handlowy łączący Chiny z Europą?;Szlak Bursztynowy;Jedwabny Szlak;Szlak Solny;Droga Królewska;Jedwabny Szlak
+510;Historia Świata;Kto był przywódcą Solidarności w Polsce?;Lech Wałęsa;Tadeusz Mazowiecki;Andrzej Gwiazda;Anna Walentynowicz;Lech Wałęsa
+511;Historia Świata;W którym roku wybuchło Powstanie Warszawskie?;1939;1943;1944;1945;1944
+512;Historia Świata;Jak nazywał się system segregacji rasowej w RPA?;Apartheid;Segregacja;Getto;Caste System;Apartheid
+513;Historia Świata;Kto był pierwszym królem Polski?;Mieszko I;Bolesław Chrobry;Kazimierz Wielki;Władysław Łokietek;Bolesław Chrobry
+514;Historia Świata;W którym roku nastąpił chrzest Polski?;960;966;1000;1025;966
+515;Historia Świata;Jak nazywała się policja polityczna w ZSRR (jedna z nazw)?;SS;Gestapo;NKWD;Stasi;NKWD
+516;Historia Świata;W którym roku odbył się Zjazd Gnieźnieński?;966;997;1000;1025;1000
+517;Historia Świata;Kto był przywódcą Włoch faszystowskich?;Benito Mussolini;Francisco Franco;Antonio Salazar;Adolf Hitler;Benito Mussolini
+518;Historia Świata;Kto odkrył penicylinę?;Ludwik Pasteur;Alexander Fleming;Maria Curie;Robert Koch;Alexander Fleming
+519;Historia Świata;Kto był ostatnim carem Rosji?;Aleksander III;Mikołaj II;Piotr III;Paweł I;Mikołaj II
+520;Historia Świata;Kto był twórcą imperium Macedońskiego?;Filip II;Aleksander Wielki;Perykles;Leonidas;Aleksander Wielki
+521;Historia Świata;Jak nazywa się bogini zwycięstwa w mitologii greckiej?;Atena;Afrodyta;Nike;Hera;Nike
+522;Historia Świata;Traktat z Maastricht (1992) powołał do życia:;NATO;ONZ;Unię Europejską;Radę Europy;Unię Europejską
+523;Ciekawostki;Ile serc ma ośmiornica?;1;2;3;4;3
+524;Ciekawostki;Jaki kolor ma pot hipopotama?;Żółty;Czerwony;Zielony;Niebieski;Czerwony
+525;Ciekawostki;Ile czasu trwała najkrótsza wojna w historii (Zanzibar vs Wielka Brytania)?;38 minut;2 godziny;1 dzień;3 dni;38 minut
+526;Ciekawostki;Jaki owoc jest botanicznie jagodą, a truskawka nie?;Jabłko;Banan;Brzoskwinia;Malina;Banan
+527;Ciekawostki;Które państwo ma najwięcej piramid na świecie?;Egipt;Meksyk;Sudan;Peru;Sudan
+528;Ciekawostki;Jaki kolor ma zachód słońca na Marsie?;Czerwony;Fioletowy;Niebieski;Zielony;Niebieski
+529;Ciekawostki;"Czego boi się osoba cierpiąca na ""hipopotomonstrosesquipedaliofobia""?";Hipopotamów;Wody;Długich słów;Ciemności;Długich słów
+530;Ciekawostki;Ile czasu zajmuje światłu słonecznemu dotarcie do Ziemi?;5 sekund;8 minut 20 sekund;1 godzina;6 minut 34 sekudy;8 minut 20 sekund
+531;Ciekawostki;Jaki kształt ma kupa wombata?;Kuli;Sześcianu;Piramidy;Walca;Sześcianu
+532;Ciekawostki;Jakie zwierzę jest w logo przeglądarki Firefox?;Lis;Panda ruda;Szop;Wilk;Panda ruda
+533;Ciekawostki;Co jest najsilniejszym mięśniem w ciele człowieka (pod względem siły nacisku)?;Biceps;Serce;Żwacz (szczęka);Język;Żwacz (szczęka)
+534;Ciekawostki;Ile waży chmura (przeciętny cumulus)?;<1g;1 kg;500 ton;5 ton;500 ton
+535;Ciekawostki;Co dzieje się z wieżą Eiffla latem?;Kurczy się;Rośnie o ok. 15 cm;Przechyla się na wschód;Zmienia kolor;Rośnie o ok. 15 cm
+536;Ciekawostki;Kto ma więcej kręgów szyjnych: żyrafa czy człowiek?;Żyrafa;Człowiek;Mają tyle samo;Żyrafa nie ma kręgów;Mają tyle samo
+537;Ciekawostki;Jaki kolor ma krew homara?;Czerwony;Niebieski;Zielony;Czarny;Niebieski
+538;Ciekawostki;Ile wynosi rekord wstrzymania oddechu pod wodą (statyczny)?;około 5 minut;około 15 minut;około 30 minut;około 1 godziny;około 30 minut
+539;Ciekawostki;Który kraj ma najwięcej wysp?;Indonezja;Filipiny;Szwecja;Grecja;Szwecja
+540;Ciekawostki;Jaki ptak potrafi latać do tyłu?;Wróbel;Orzeł;Koliber;Jaskółka;Koliber
+541;Ciekawostki;Jaka planeta kręci się w przeciwną stronę niż pozostałe?;Mars;Jowisz;Wenus;Neptun;Wenus
+542;Ciekawostki;"Co to jest ""aglet""?";Mała sowa;Skuwka na końcu sznurowadła;Rodzaj makaronu;Część ucha;Skuwka na końcu sznurowadła
+543;Ciekawostki;Ile trwa ciąża u słonia afrykańskiego?;9 miesięcy;12 miesięcy;18 miesięcy;22 miesiące;22 miesiące
+544;Ciekawostki;"Co to jest ""bambus""?";Drzewo;Krzew;Trawa;Paproć;Trawa
+545;Ciekawostki;Jaki jest najpopularniejszy napój na świecie (po wodzie)?;Cola;Kawa;Herbata;Sok pomarańczowy;Herbata
+546;Ciekawostki;Ile klawiszy ma standardowy fortepian?;66;88;100;50;88
+547;Ciekawostki;"Jaki kolor ma ""czarna skrzynka"" w samolocie?";Czarny;Pomarańczowy;Żółty;Niebieski;Pomarańczowy
+548;Ciekawostki;Który zmysł rozwija się pierwszy u człowieka?;Wzrok;Słuch;Dotyk;Smak;Dotyk
+549;Ciekawostki;Kto był pierwszym prezydentem Polski po 1989?;Lech Wałęsa;Wojciech Jaruzelski;Aleksander Kwaśniewski;Lech Kaczyński;Wojciech Jaruzelski
+550;Ciekawostki;Jaki kolor ma szmaragd?;Czerwony;Zielony;Niebieski;Żółty;Zielony
+551;Święta;Z jakiego kraju wywodzi się tradycja ubierania choinki?;Z Rosji;Z Niemiec;Z USA;Z Francji;Z Niemiec
+552;Święta;Jak ma na imię pies Grincha?;Max;Rex;Bud;Sam;Max
+553;Święta;W którym roku piosenka „Last Christmas” zespołu Wham! miała swoją premierę?;1980;1984;1988;1991;1984
+554;Święta;Jak nazywa się tradycyjna śląska zupa wigilijna z piernika, piwa i bakalii?;Kutia;Moczka;Siemieniotka;Garus;Moczka
+555;Święta;W filmie „Kevin sam w domu”, dokąd rodzina McCallisterów leci na święta, zostawiając Kevina?;Do Paryża;Do Londynu;Do Rzymu;Na Florydę;Do Paryża
+556;Święta;Co symbolizuje sianko pod obrusem?;Ubóstwo, w jakim narodził się Jezus;Przyszłe bogactwo gospodarzy;Pomyślność w hodowli zwierząt;Oczekiwanie na Trzech Króli;Ubóstwo, w jakim narodził się Jezus
+557;Święta;Ile reniferów ciągnie sanie Świętego Mikołaja (wliczając Rudolfa)?;6;8;9;12;9
+558;Święta;Z czego tradycyjnie robi się kutię?;Z ryżu i miodu;Z kaszy gryczanej i rodzynek;Z pszenicy, maku i miodu;Z pęczaku i orzechów;Z pszenicy, maku i miodu
+559;Święta;Kto napisał „Opowieść wigilijną”?;Mark Twain;Charles Dickens;Hans Christian Andersen;J.R.R. Tolkien;Charles Dickens
+560;Święta;Co oznacza słowo „Adwent”?;Oczekiwanie / Przyjście;Post;Radość;Narodzenie;Oczekiwanie / Przyjście
+561;Święta;Jak nazywa się popularne włoskie ciasto świąteczne w kształcie wysokiej babki?;Tiramisu;Cannoli;Panettone;Panna Cotta;Panettone
+562;Święta;Jak nazywa się główny bohater filmu „Szklana pułapka”?;John Rambo;John McClane;Martin Riggs;Jack Slater;John McClane
+563;Święta;Jak nazywa się dzień po Bożym Narodzeniu w Wielkiej Brytanii (26 grudnia)?;Second Christmas;Boxing Day;St. Stephen's Day;Present Day;Boxing Day
+564;Święta;W filmie „W krzywym zwierciadle: Witaj, Święty Mikołaju”, co Clark Griswold planował kupić za premię świąteczną?;Nowy samochód;Basen;Wycieczkę dookoła świata;Dom letniskowy;Basen
+565;Święta;Który kraj podarował Wielkiej Brytanii choinkę stojącą na Trafalgar Square (co roku)?;Szwecja;Norwegia;Dania;Finlandia;Norwegia
+566;Święta;Dlaczego, według przesądu, chowa się łuskę karpia do portfela?;Żeby nie zgubić portfela;Żeby przyciągnąć pieniądze;Żeby mieć szczęście w miłości;Żeby być zdrowym;Żeby przyciągnąć pieniądze
+567;Święta;Co oznacza skrót „K+M+B” pisany kredą na drzwiach (według interpretacji łacińskiej)?;Kacper, Melchior, Baltazar;Niech Chrystus błogosławi ten dom;Król, Mesjasz, Bóg;Kochajmy, Módlmy się, Błogosławmy;Christus Mansionem Benedicat (Niech Chrystus błogosławi ten dom)
+568;Święta;Jak nazywa się żydowskie święto obchodzone w okresie zbliżonym do Bożego Narodzenia?;Jom Kippur;Rosz ha-Szana;Pascha;Chanuka;Chanuka
+569;Święta;Jak nazywa się złodziejski duet w „Kevin sam w domu”?;Mokrzy Bandyci;Lepcy Bandyci;Nocni Złodzieje;Świąteczni Złodzieje;Mokrzy Bandyci
+570;Święta;Kto napisał muzykę do baletu „Dziadek do orzechów”?;Fryderyk Chopin;Piotr Czajkowski;Ludwig van Beethoven;Wolfgang Amadeusz Mozart;Piotr Czajkowski
+571;Święta;Jak nazywa się ciasto świąteczne popularne w Niemczech (z dużą ilością bakalii)?;Strucla;Sernik;Szarlotka;Baumkuchen;Strucla (Stollen)
+572;Święta;W którym filmie o Jamesie Bondzie pojawia się postać Dr. Christmas Jones?;GoldenEye;Jutro nie umiera nigdy;Świat to za mało;Śmierć nadejdzie jutro;Świat to za mało
+573;Święta;Co oznaczają cztery świece na wieńcu adwentowym?;Cztery pory roku;Cztery strony świata;Cztery niedziele adwentu;Czterech ewangelistów;Cztery niedziele adwentu
+574;Święta;Co robimy 2 lutego w kościele katolickim, co kończy okres śpiewania kolęd?;Święcimy jajka;Święcimy gromnice;Sypiemy głowy popiołem;Idziemy z palmami;Święcimy gromnice
+575;Święta;W jakim filmie Arnold Schwarzenegger walczy o figurkę Turbo-Mana?;Świąteczna gorączka (Jingle All the Way);Bliźniacy;Gliniarz w przedszkolu;Junior;Świąteczna gorączka (Jingle All the Way)
+576;Święta;Jaki kolor świecy adwentowej zapala się w trzecią niedzielę adwentu (Gaudete)?;Różowy;Fioletowy;Czerwony;Biały;Różowy
+577;Święta;Jak nazywa się piosenka zespołu Wham!, której George Michael nie lubił?;Last Christmas;Wake Me Up Before You Go-Go;Careless Whisper;Freedom;Last Christmas

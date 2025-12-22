@@ -1,0 +1,45 @@
+import React from 'react';
+import { Play } from 'lucide-react';
+
+interface SegmentBreak3Props {
+  onContinue: () => void;
+}
+
+const SegmentBreak3: React.FC<SegmentBreak3Props> = ({ onContinue }) => {
+  return (
+    <div className="max-w-2xl mx-auto p-8 bg-surface rounded-xl shadow-2xl border border-white/10 animate-fade-in">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
+          SEGMENT 3 ZAKOŃCZONY!
+        </h1>
+        <p className="text-gray-300">Muzyka - Świetny słuch!</p>
+        <p className="text-gray-300 mt-2">
+          W tej części gry uczestnicy muszą rozpoznać film na podstawie jednej klatki.
+          Wygrywa ta drużyna (lub gracz), która pierwsza zgłosi się i poda poprawny tytuł.
+        </p>
+      </div>
+
+      <div className="bg-dark/50 p-6 rounded-lg mb-8 border-l-4 border-secondary">
+        <h3 className="font-bold text-lg mb-2">Zasady:</h3>
+        <ul className="list-disc list-inside space-y-2 text-gray-400">
+          <li>Wyświetlana jest losowa klatka z filmu.</li>
+          <li>Prowadzący klika nazwę drużyny, która odgadła poprawnie.</li>
+          <li>Za poprawną odpowiedź przyznawane jest <strong>10 punktów</strong>.</li>
+          <li>Punkty sumują się z wynikiem z poprzedniego segmentu.</li>
+        </ul>
+      </div>
+
+      <div className="flex flex-col items-center gap-6">
+        <button
+          onClick={onContinue}
+          className="w-full py-4 rounded-xl text-xl font-bold text-white shadow-lg transition-all flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-secondary hover:brightness-110"
+        >
+          <Play className="w-6 h-6 fill-current" />
+          Dalej
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default SegmentBreak3;
