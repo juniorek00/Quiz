@@ -17,6 +17,7 @@ import SegmentBreak1 from './components/SegmentBreak1';
 import SegmentBreak2 from './components/SegmentBreak2';
 import SegmentBreak3 from './components/SegmentBreak3';
 import SegmentBreak4 from './components/SegmentBreak4';
+import SegmentBreak0 from './components/SegmentBreak0';
 
 function App() {
   const [appState, setAppState] = useState<AppState>('SETUP');
@@ -25,7 +26,7 @@ function App() {
   const [nextStage, setNextStage] = useState<'SEGMENT2' | 'SEGMENT3' | 'SEGMENT4' | 'END_GAME'>('SEGMENT2');
 
   // Stan określający, który segment właśnie się zakończył (do wyświetlenia odpowiedniego SegmentBreak)
-  const [completedSegment, setCompletedSegment] = useState<1 | 2 | 3 | 4 | null>(null);
+  const [completedSegment, setCompletedSegment] = useState<0 | 1 | 2 | 3 | 4 | null>(null);
 
   // --- Data from CSV ---
   const [questionsPool, setQuestionsPool] = useState<Question[]>([]);
@@ -141,7 +142,14 @@ function App() {
   };
 
   const handleContinueFromBreak = () => {
-    // After user continues from the break, go to the next segment setup
+    // After user continues from the break, for pre-start break (0) show rules panel
+    if (completedSegment === 0 && pendingStart) {
+      setCompletedSegment(null);
+      setAppState('RULES');
+      return;
+    }
+
+    // Otherwise go to next segment setup
     goToNextSegment();
   };
 
@@ -303,7 +311,9 @@ function App() {
                 onStartGame={handleStartGame}
                 onShowRules={(mode, selPlayers, selTeams, rounds, categories) => {
                   setPendingStart({ mode, players: selPlayers, teams: selTeams, rounds, categories });
-                  setAppState('RULES');
+                  // Show pre-start break before Segment 1
+                  setCompletedSegment(0);
+                  setAppState('SEGMENT_BREAK');
                 }}
                 questionsPool={questionsPool} 
               />
@@ -316,11 +326,15 @@ function App() {
                 categories={pendingStart.categories}
                 onBack={() => { setPendingStart(null); setAppState('SETUP'); }}
                 onConfirm={() => {
-                  // start the game using the pending configuration
+                  // Start the game using the pending configuration
                   handleStartGame(pendingStart.mode, pendingStart.players, pendingStart.teams, pendingStart.rounds, pendingStart.categories);
                   setPendingStart(null);
                 }}
               />
+            )}
+
+            {appState === 'SEGMENT_BREAK' && completedSegment === 0 && (
+              <SegmentBreak0 onContinue={handleContinueFromBreak} />
             )}
 
             {appState === 'SEGMENT_BREAK' && completedSegment === 1 && (
